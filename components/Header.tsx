@@ -1,9 +1,14 @@
 import React from 'react'
 
+
 function Header() {
   return (
-    <header>
-      Header
+    <header className=''>
+      <nav className=''>
+        <div>
+
+        </div>
+      </nav>
     </header>
   )
 }
