@@ -32,7 +32,7 @@ function Testimonial() {
     );
   };
   return (
-    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] h-full w-ful pt-20 pb-48">
+    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] h-[100vh] w-ful pt-20 ">
       <div className="flex flex-col gap-4 items-center justify-center">
         <h1 className="text-[36px] font-semibold leading-[54px] text-text max-w-[678px]">
           What Our Customers Say About Us

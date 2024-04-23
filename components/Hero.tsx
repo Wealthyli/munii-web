@@ -16,34 +16,23 @@ function Hero() {
         </p>
         <div className="mt-8 flex flex-row gap-4">
           <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[5px]">
-            <Image 
-              src={googlePlay}
-              alt="google play"
-            />
+            <Image src={googlePlay} alt="google play" />
             <div className="flex flex-col text-white gap-[0.25rem] text-left">
-              <h1 className="capitalize text-lg">
-                Get it On
-              </h1>
-              <h3 className="font-semibold text-2xl">
-                Google Play
-              </h3>
+              <h1 className="capitalize text-lg">Get it On</h1>
+              <h3 className="font-semibold text-2xl">Google Play</h3>
             </div>
           </button>
           <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[5px]">
-            <IoLogoApple className='text-white w-[52px] h-[56px]'/>
+            <IoLogoApple className="text-white w-[52px] h-[56px]" />
             <div className="flex flex-col text-white gap-[0.25rem] text-left">
-              <h1 className="capitalize text-lg">
-                Get it On
-              </h1>
-              <h3 className="font-semibold text-2xl">
-                Apple Play
-              </h3>
+              <h1 className="capitalize text-lg">Get it On</h1>
+              <h3 className="font-semibold text-2xl">Apple Play</h3>
             </div>
           </button>
         </div>
       </div>
       <div>
-        <Image 
+        <Image
           src={bannerImage}
           alt="hero-image"
           className="w-[486px] h-[507px]"
