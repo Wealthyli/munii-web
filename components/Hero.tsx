@@ -38,6 +38,22 @@ function Hero() {
           className="w-[486px] h-[507px]"
         />
       </div>
+      <div
+        style={{
+          width: "818.5px",
+          height: "1371.91px",
+          top: "-190px",
+          left: "120px",
+          borderRadius: '40%',
+          opacity: "10",
+          transform: "rotate(24.54deg)",
+          background: "#CAFF011A",
+          position: 'absolute',
+          zIndex: '-1'
+
+        }}
+        className="hidden lg:flex"
+      />
     </section>
   );
 }
