@@ -10,6 +10,8 @@ import newNotification from './New-Notification.png';
 import Notification from './Notification.png';
 import notify from './notify.png';
 import rectangle from './Rectangle.png'
+import googlePlay from './google-play.png'
+
 
 export {
   account,
@@ -23,5 +25,6 @@ export {
   newNotification,
   Notification,
   notify,
-  rectangle
+  rectangle,
+  googlePlay
 }
