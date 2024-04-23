@@ -5,3 +5,8 @@ export interface CardProp {
   text: string
 }
 
+export interface TestimonialCardProp {
+  image: any
+  text: string
+  name: string
+}

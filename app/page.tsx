@@ -8,7 +8,6 @@ export default function Home() {
       <main className="">
         <Hero />
         <MainBody />
-        <CTA />
       </main>
       <Footer />
     </>

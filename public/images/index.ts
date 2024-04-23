@@ -15,6 +15,7 @@ import cardIcon from './card-icon.png'
 import Analysis from './Analysis.png'
 import track from './Track-pic.png'
 import budg from './Analysis_.png'
+import doe from './doe.png'
 
 export {
   account,
@@ -33,5 +34,6 @@ export {
   cardIcon,
   Analysis,
   track,
-  budg
+  budg,
+  doe
 }
