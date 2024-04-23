@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import { CardProp } from "@/types";
-import { cardIcon } from "@/public/images";
+import { cardIcon, Analysis, budg, track } from "@/public/images";
 
 function Features() {
   const Card = ({ title, text }: CardProp) => {
     return (
-      <div className="flex flex-col max-w-[387px] h-[286px] rounded-[20px] bg-white gap-10 p-8" style={{ boxShadow: '1px 5px 40px 8px #6E758812' }}>
+      <div
+        className="flex flex-col max-w-[387px] h-[286px] rounded-[20px] bg-white gap-10 p-8"
+        style={{ boxShadow: "1px 5px 40px 8px #6E758812" }}
+      >
         <div className="bg-black rounded-[50%] p-4 w-[50px] h-[50px]">
           <Image src={cardIcon} alt="card icon" />
         </div>
@@ -19,8 +22,8 @@ function Features() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 md:px-[5rem]">
-      <div className="flex flex-col gap-4 ">
+    <div className="flex flex-col px-4 md:px-[5rem]">
+      <div className="flex flex-col items-center justify-center gap-4 ">
         <h1 className="text-[36px] font-semibold leading-[54px] text-text text-center">
           Our Features
         </h1>
@@ -54,6 +57,65 @@ function Features() {
           title="Financial Advice"
           text="Automatically track your expenses across all your accounts. Receive real-time updates on your spending "
         />
+      </div>
+      <section className="mt-24 flex flex-col gap-20">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <Image src={Analysis} alt="analysis of spending" className="w-[548px] h-[390px]" />
+          <div className="flex flex-col gap-6 max-w-[495px]">
+            <h1 className="font-semibold text-[32px] leading-[43.36px] text-text ">
+              Analyze your spending habits and find ways to save your money
+            </h1>
+            <p className="text-s-text text-sm leading-[24px]">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquets.Corem ipsum dolor
+              sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+              velit interdum, ac aliquets.Corem ipsum dolor sit amet,
+              consectetur adipiscing elit. N.Analyze your spending habits and
+              find ways to save yectetur adipiscing elit. Nunc vulputate libero
+              et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
+              consectetur adipiscinipsu
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row-reverse justify-between items-center">
+          <Image src={budg} alt="analysis of spending" className="w-[548px] h-[390px]" />
+          <div className="flex flex-col gap-6 max-w-[495px]">
+            <h1 className="font-semibold text-[32px] leading-[43.36px] text-text ">
+            Budget Your Income And Stay on Top of Your Spending            </h1>
+            <p className="text-s-text text-sm leading-[24px]">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquets.Corem ipsum dolor
+              sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+              velit interdum, ac aliquets.Corem ipsum dolor sit amet,
+              consectetur adipiscing elit. N.Analyze your spending habits and
+              find ways to save yectetur adipiscing elit. Nunc vulputate libero
+              et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
+              consectetur adipiscinipsu
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <Image src={track} alt="analysis of spending" className="w-[548px] h-[390px]" />
+          <div className="flex flex-col gap-6 max-w-[495px]">
+            <h1 className="font-semibold text-[32px] leading-[43.36px] text-text ">
+            Get all your questions about finance answered            </h1>
+            <p className="text-s-text text-sm leading-[24px]">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquets.Corem ipsum dolor
+              sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+              velit interdum, ac aliquets.Corem ipsum dolor sit amet,
+              consectetur adipiscing elit. N.Analyze your spending habits and
+              find ways to save yectetur adipiscing elit. Nunc vulputate libero
+              et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
+              consectetur adipiscinipsu
+            </p>
+          </div>
+        </div>
+      </section>
+      <div className="flex items-center justify-center mt-16">
+        <button className="text-primary bg-black w-[210px] h-[56px] flex items-center justify-center rounded-[20px] font-semibold">
+          Get Started
+        </button>
       </div>
     </div>
   );

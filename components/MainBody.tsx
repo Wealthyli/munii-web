@@ -1,10 +1,16 @@
 import React from 'react'
 import Features from './Features'
+import Testimonial from './Testimonial'
 
 function MainBody() {
   return (
     <section>
-      <Features />
+      <div className='mt-24'>
+        <Features />
+      </div>
+      <div className='mt-24'>
+        <Testimonial />
+      </div>
     </section>
   )
 }
