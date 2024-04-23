@@ -38,6 +38,7 @@ function Hero() {
           className="w-[486px] h-[507px]"
         />
       </div>
+      {/* shallow header background */}
       <div
         style={{
           width: "818.5px",
