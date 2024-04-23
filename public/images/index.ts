@@ -11,7 +11,10 @@ import Notification from './Notification.png';
 import notify from './notify.png';
 import rectangle from './Rectangle.png'
 import googlePlay from './google-play.png'
-
+import cardIcon from './card-icon.png'
+import Analysis from './Analysis.png'
+import track from './Track-pic.png'
+import budg from './Analysis_.png'
 
 export {
   account,
@@ -26,5 +29,9 @@ export {
   Notification,
   notify,
   rectangle,
-  googlePlay
+  googlePlay,
+  cardIcon,
+  Analysis,
+  track,
+  budg
 }

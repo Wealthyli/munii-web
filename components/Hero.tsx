@@ -5,12 +5,12 @@ import { IoLogoApple } from "react-icons/io";
 
 function Hero() {
   return (
-    <section className=" flex flex-col md:flex-row px-4 md:px-[5rem] items-center md:justify-around">
+    <section className=" flex flex-col md:flex-row px-4 md:px-[5rem] items-center md:justify-between mt-8">
       <div className="flex-col max-w-[35rem]">
-        <h1 className="text-[48px] leading-[72px] font-semibold">
+        <h1 className="text-[48px] leading-[72px] font-semibold text-text">
           Ready to Take Control of Your Finances?
         </h1>
-        <p className="text-[18px] mt-8">
+        <p className="text-[18px] mt-4 max-w-[31rem] text-text">
           Discover the power of smart budgeting with our app. Optimize your
           spending, reach your goals faster, and enjoy a more fulfilling life.
         </p>

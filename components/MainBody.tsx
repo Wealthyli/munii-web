@@ -1,8 +1,11 @@
 import React from 'react'
+import Features from './Features'
 
 function MainBody() {
   return (
-    <div>MainBody</div>
+    <section>
+      <Features />
+    </section>
   )
 }
 
