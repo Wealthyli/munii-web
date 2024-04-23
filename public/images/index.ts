@@ -2,7 +2,7 @@ import account from './account.png';
 import apphome from './app-home.png';
 import bank from './bank.png';
 import bannerImage from './BannerImage.png';
-import budget from './budet.png';
+import budget from './Budget.png';
 import chat from './chatt.png'
 import logo from './logo.png';
 import moneyStack from './money-stack.png';
