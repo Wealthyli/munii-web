@@ -3,7 +3,13 @@ import Link from "next/link";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
+
 function Footer() {
+  // Function to get the current year
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
   return (
     <footer className="bg-black w-full h-[80vh] pb-12 flex flex-col justify-end px-4 md:px-[5rem] ">
       <div className="flex justify-between items-center mb-8 ">
@@ -21,7 +27,7 @@ function Footer() {
       <div className="border-2 w-full border-white mb-4" />
       <div className="flex justify-between items-center ">
         <div className="text-white">
-          <h1 className="text-sm">2024 Munii. All rights reserved</h1>
+          <h1 className="text-sm">&#169;{getCurrentYear()} Munii. All rights reserved</h1>
         </div>
         <div className="text-white flex gap-8">
           <Link href="">Terms of Service</Link>
