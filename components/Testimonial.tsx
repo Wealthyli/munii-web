@@ -16,12 +16,12 @@ function Testimonial() {
           />
         </div>
 
-        <div className="bg-white rounded-2xl py-16 px-12 w-[388px] h-[262px] flex flex-col gap-2">
-          <h2 className="text-[14px] leading-[24px] text-text max-w-[349px]">
+        <div className="bg-white rounded-2xl py-12 md:py-16 px-12  w-full lg:w-[388px]  lg:h-[262px] flex flex-col lg:gap-2">
+          <h2 className="text-[14px] text-justify leading-[24px] text-text max-w-[349px]">
             {text}
           </h2>
-          <div className="border-2 w-[100%] h-[2px]" />
-          <div className="flex flex-col ">
+          <div className="border-2 w-[100%] h-[2px] mt-12 lg:mt-0" />
+          <div className="flex flex-col mt-4 lg:mt-0">
             <h2 className="font-semibold text-[14px] leading-6 text-text">
               {name}
             </h2>
@@ -32,9 +32,9 @@ function Testimonial() {
     );
   };
   return (
-    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] h-[100vh] w-ful pt-20 ">
+    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] w-[100vw] lg:h-[100vh] pt-8 lg:pt-20 ">
       <div className="flex flex-col gap-4 items-center justify-center">
-        <h1 className="text-[36px] font-semibold leading-[54px] text-text max-w-[678px]">
+        <h1 className="text-[36px] text-center font-semibold leading-[54px] text-text max-w-[678px]">
           What Our Customers Say About Us
         </h1>
         <p className="text-s-text leading-[24px] text-[16px] text-center max-w-[549px]">

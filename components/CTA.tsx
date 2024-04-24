@@ -6,7 +6,7 @@ import { IoLogoApple } from "react-icons/io";
 function CTA() {
   return (
     <div
-      className="relative top-20 w-[100%] rounded-[30px] h-[60vh] flex flex-col items-center justify-center"
+      className="relative top-[12rem] lg:top-20 w-[100%] rounded-[30px] h-[60vh] flex flex-col items-center justify-center"
       style={{
         background:
           "linear-gradient(109.45deg, #576428 34.41%, #131508 75.61%, #1C2108 82.85%)",
@@ -17,12 +17,12 @@ function CTA() {
         <h1 className="font-semibold text-white text-[32px] leading-[43px] max-w-[430px] text-center">
           Download Munii App for iOS or Android
         </h1>
-        <p className="max-w-[720px] text-center text-[#D9D9D9] leading-6">
+        <p className="max-w-[720px] text-center text-sm lg:text-2xl text-[#D9D9D9] leading-6">
           Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquets.
         </p>
       </div>
-      <div className="mt-8 flex flex-row gap-4">
+      <div className="mt-8 flex flex-col lg:flex-row gap-4">
         <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[5px]">
           <Image src={googlePlay} alt="google play" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">

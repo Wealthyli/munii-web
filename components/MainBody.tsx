@@ -8,7 +8,7 @@ function MainBody() {
       <div className='mt-24'>
         <Features />
       </div>
-      <div className='mt-24'>
+      <div className='mt-8 lg:mt-24'>
         <Testimonial />
       </div>
     </section>

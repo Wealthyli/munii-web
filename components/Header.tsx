@@ -38,7 +38,7 @@ function Header() {
 
   return (
     <header className="">
-      <nav className="flex items-center justify-between px-4 md:px-[5rem] py-[1.5rem]">
+      <nav className="flex items-center justify-between px-4 lg:px-[5rem] py-[1.5rem]">
         <div className="">
           <Image src={logo} alt="logo" />
         </div>
