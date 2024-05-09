@@ -9,6 +9,8 @@ import { TfiClose } from "react-icons/tfi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import ComingSoonModal from "./ComingSoonModal";
+
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -36,12 +38,25 @@ function Header() {
     };
   }, [isMobileMenuOpen]);
 
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+const openModal = () => {
+    setIsModalOpen(prev => !prev)
+  }
+
+
+  const closeModal = () => {
+    setIsModalOpen(prev => !prev)
+  }
+
+  
+
   return (
     <header className="">
       <nav className="flex items-center justify-between px-4 lg:px-[5rem] py-[1.5rem]">
-        <div className="">
+        <Link className="" href='/'>
           <Image src={logo} alt="logo" />
-        </div>
+        </Link>
         <div className="md:flex items-center gap-[1.5rem] hidden ">
           <button className="p-2 bg-black rounded-[50%]">
             <RiInstagramLine className="text-primary w-[19px] h-[16px]" />
@@ -49,7 +64,7 @@ function Header() {
           <button className="p-2 bg-black rounded-[50%]">
             <FaXTwitter className="text-primary w-[19px] h-[16px]" />
           </button>
-          <button className="border-2 border-black py-[18px] px-[32px] rounded-[20px] font-[600] text-lg">
+          <button onClick={openModal} className="border-2 border-black py-[18px] px-[32px] rounded-[20px] font-[600] text-lg">
             Use Web App
           </button>
         </div>
@@ -66,7 +81,6 @@ function Header() {
             />
           )}
         </div>
-
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -92,13 +106,6 @@ function Header() {
                   Services
                 </Link>
                 <Link
-                  href="/#faq"
-                  className="block mb-4 hover-text-green-500"
-                  onClick={closeMobileMenu}
-                >
-                  FAQ
-                </Link>
-                <Link
                   href="/support"
                   className="block mb-4 hover-text-green-500"
                   onClick={closeMobileMenu}
@@ -107,7 +114,7 @@ function Header() {
                 </Link>
                 <Link
                   href="#"
-                  className="block mx-4 bg-green-500 text-white rounded py-3 px-4 hover-bg-transparent hover-border-green-700 border"
+                  className="block mx-4 bg-black text-white rounded py-3 px-4 hover-bg-transparent hover-border-green-700 border"
                   onClick={closeMobileMenu}
                 >
                   Get the App
@@ -117,6 +124,8 @@ function Header() {
           )}
         </AnimatePresence>
       </nav>
+      {isModalOpen && <ComingSoonModal closeModal={closeModal}/>}
+
     </header>
   );
 }

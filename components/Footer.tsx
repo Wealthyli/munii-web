@@ -30,8 +30,8 @@ function Footer() {
           <h1 className="text-sm">&#169;{getCurrentYear()} Munii. All rights reserved</h1>
         </div>
         <div className="text-white flex gap-8">
-          <Link href="">Terms of Service</Link>
-          <Link href="">Privacy Policy</Link>
+          <Link href="/terms">Terms of Service</Link>
+          <Link href="/policy">Privacy Policy</Link>
         </div>
       </div>
     </footer>

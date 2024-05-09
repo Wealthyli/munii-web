@@ -1,12 +1,17 @@
+// @ts-nocheck
+"use client";
 import React from "react";
 import Image from "next/image";
 import { CardProp } from "@/types";
 import { cardIcon, Analysis, budg, track } from "@/public/images";
+import { motion } from "framer-motion";
+
 
 function Features() {
   const Card = ({ title, text }: CardProp) => {
     return (
-      <div
+      <motion.div
+        whileHover={{ scale: 1 }}
         className="flex flex-col max-w-[387px] h-auto md:h-[286px] rounded-[20px] bg-white gap-10 p-8"
         style={{ boxShadow: "1px 5px 40px 8px #6E758812" }}
       >
@@ -17,12 +22,18 @@ function Features() {
           <h1 className="text-2xl font-semibold text-text">{title}</h1>
           <p className="text-[16px] leading-[24px] text-s-text">{text}</p>
         </div>
-      </div>
+      </motion.div>
     );
   };
 
   return (
-    <div className="flex flex-col px-4 md:px-[5rem]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      className="flex flex-col px-4 md:px-[5rem]"
+      id="services"
+    >
       <div className="flex flex-col items-center justify-center gap-4 ">
         <h1 className="text-[36px] font-semibold leading-[54px] text-text text-center">
           Our Features
@@ -60,12 +71,32 @@ function Features() {
       </div>
       <section className="mt-24 flex flex-col gap-20">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
-          <Image src={Analysis} alt="analysis of spending" className="w-[548px] h-auto md:h-[390px]" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={[{ x: [-40, 0] }, { opacity: 1 }]}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          >
+            <Image
+              src={Analysis}
+              alt="analysis of spending"
+              className="w-[548px] h-auto md:h-[390px]"
+            />
+          </motion.div>
           <div className="flex flex-col gap-6 w-auto  lg:max-w-[495px]">
-            <h1 className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text ">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text "
+            >
               Analyze your spending habits and find ways to save your money
-            </h1>
-            <p className="text-s-text text-justify  text-sm leading-[24px]">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={[{ opacity: 1 }]}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="text-s-text text-justify  text-sm leading-[24px]"
+            >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquets.Corem ipsum dolor
               sit amet, consectetur adipiscing elit. Nunc vulputate libero et
@@ -74,15 +105,36 @@ function Features() {
               find ways to save yectetur adipiscing elit. Nunc vulputate libero
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row-reverse justify-between items-center gap-8 lg:gap-0">
-          <Image src={budg} alt="analysis of spending" className="w-auto lg:w-[548px] h-auto lg:h-[390px]" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={[{ x: [40, 0] }, { opacity: 1 }]}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          >
+            <Image
+              src={budg}
+              alt="analysis of spending"
+              className="w-auto lg:w-[548px] h-auto lg:h-[390px]"
+            />
+          </motion.div>
           <div className="flex flex-col gap-6 lg:max-w-[495px]">
-            <h1 className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text ">
-            Budget Your Income And Stay on Top of Your Spending            </h1>
-            <p className="text-s-text text-justify text-sm leading-[24px]">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text "
+            >
+              Budget Your Income And Stay on Top of Your Spending{" "}
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={[{ opacity: 1 }]}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="text-s-text text-justify text-sm leading-[24px]"
+            >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquets.Corem ipsum dolor
               sit amet, consectetur adipiscing elit. Nunc vulputate libero et
@@ -91,15 +143,36 @@ function Features() {
               find ways to save yectetur adipiscing elit. Nunc vulputate libero
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
-          <Image src={track} alt="analysis of spending" className="w-auto lg:w-[548px] h-auto lg:h-[390px]" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={[{ x: [-40, 0] }, { opacity: 1 }]}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          >
+            <Image
+              src={track}
+              alt="analysis of spending"
+              className="w-auto lg:w-[548px] h-auto lg:h-[390px]"
+            />
+          </motion.div>
           <div className="flex flex-col gap-6 lg:max-w-[495px]">
-            <h1 className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text ">
-            Get all your questions about finance answered            </h1>
-            <p className="text-s-text text-justify text-sm leading-[24px]">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text "
+            >
+              Get all your questions about finance answered{" "}
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={[{ opacity: 1 }]}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="text-s-text text-justify text-sm leading-[24px]"
+            >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquets.Corem ipsum dolor
               sit amet, consectetur adipiscing elit. Nunc vulputate libero et
@@ -108,7 +181,7 @@ function Features() {
               find ways to save yectetur adipiscing elit. Nunc vulputate libero
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
-            </p>
+            </motion.p>
           </div>
         </div>
       </section>
@@ -117,7 +190,7 @@ function Features() {
           Get Started
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,3 +1,4 @@
+'use client'
 import { googlePlay } from "@/public/images";
 import Image from "next/image";
 import React from "react";
@@ -23,14 +24,14 @@ function CTA() {
         </p>
       </div>
       <div className="mt-8 flex flex-col lg:flex-row gap-4">
-        <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[5px]">
+        <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
           <Image src={googlePlay} alt="google play" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">
             <h1 className="capitalize text-lg">Get it On</h1>
             <h3 className="font-semibold text-2xl">Google Play</h3>
           </div>
         </button>
-        <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[5px]">
+        <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
           <IoLogoApple className="text-white w-[52px] h-[56px]" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">
             <h1 className="capitalize text-lg">Get it On</h1>
