@@ -11,7 +11,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import ComingSoonModal from "./ComingSoonModal";
 
-
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -38,23 +37,20 @@ function Header() {
     };
   }, [isMobileMenuOpen]);
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-const openModal = () => {
-    setIsModalOpen(prev => !prev)
-  }
-
+  const openModal = () => {
+    setIsModalOpen((prev) => !prev);
+  };
 
   const closeModal = () => {
-    setIsModalOpen(prev => !prev)
-  }
-
-  
+    setIsModalOpen((prev) => !prev);
+  };
 
   return (
     <header className="">
       <nav className="flex items-center justify-between px-4 lg:px-[5rem] py-[1.5rem]">
-        <Link className="" href='/'>
+        <Link className="" href="/">
           <Image src={logo} alt="logo" />
         </Link>
         <div className="md:flex items-center gap-[1.5rem] hidden ">
@@ -64,7 +60,10 @@ const openModal = () => {
           <button className="p-2 bg-black rounded-[50%]">
             <FaXTwitter className="text-primary w-[19px] h-[16px]" />
           </button>
-          <button onClick={openModal} className="border-2 border-black py-[18px] px-[32px] rounded-[20px] font-[600] text-lg">
+          <button
+            onClick={openModal}
+            className="border-2 border-black py-[18px] px-[32px] rounded-[20px] font-[600] text-lg"
+          >
             Use Web App
           </button>
         </div>
@@ -90,7 +89,7 @@ const openModal = () => {
               transition={{ duration: 0.3 }}
               className="md:hidden fixed top-20 right-0 w-64 h-full bg-white z-50 mobile-menu"
             >
-              <div className="text-center py-8">
+              <div className="text-center flex flex-col items-center justify-center py-8">
                 <Link
                   href="/about"
                   className="block mb-4 mt-2 hover:text-green-500"
@@ -112,20 +111,18 @@ const openModal = () => {
                 >
                   Support
                 </Link>
-                <Link
-                  href="#"
-                  className="block mx-4 bg-black text-white rounded py-3 px-4 hover-bg-transparent hover-border-green-700 border"
-                  onClick={closeMobileMenu}
+                <button
+                  onClick={openModal}
+                  className="block mx-4 bg-black text-white rounded py-3 px-4 hover-bg-transparent hover-border-green-700 border self-center"
                 >
                   Get the App
-                </Link>
+                </button>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </nav>
-      {isModalOpen && <ComingSoonModal closeModal={closeModal}/>}
-
+      {isModalOpen && <ComingSoonModal closeModal={closeModal} />}
     </header>
   );
 }

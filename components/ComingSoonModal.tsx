@@ -12,7 +12,7 @@ const ComingSoonModal: React.FC<Props> = ({ closeModal }) => {
     <div className="modal">
       <div className="modal-content flex flex-col gap-3 items-center justify w-[90%] lg:w-[50%] md:py-12 ">
         <span className="close " onClick={closeModal}>
-          <IoMdClose className="w-4 h-4"/>
+          <IoMdClose className="text-2xl"/>
         </span>
         <Image 
           src={comingSoon}

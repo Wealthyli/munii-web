@@ -1,13 +1,25 @@
 // @ts-nocheck
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { CardProp } from "@/types";
 import { cardIcon, Analysis, budg, track } from "@/public/images";
 import { motion } from "framer-motion";
-
+import ComingSoonModal from "./ComingSoonModal";
 
 function Features() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = () => {
+      setIsModalOpen(prev => !prev)
+    }
+
+
+  const closeModal = () => {
+    setIsModalOpen(prev => !prev)
+  }
+
   const Card = ({ title, text }: CardProp) => {
     return (
       <motion.div
@@ -186,10 +198,11 @@ function Features() {
         </div>
       </section>
       <div className="flex items-center justify-center mt-16">
-        <button className="text-primary bg-black w-[210px] h-[56px] flex items-center justify-center rounded-[20px] font-semibold">
+        <button onClick={openModal} className="text-primary bg-black w-[210px] h-[56px] flex items-center justify-center rounded-[20px] font-semibold">
           Get Started
         </button>
       </div>
+      {isModalOpen && <ComingSoonModal closeModal={closeModal} />}
     </motion.div>
   );
 }

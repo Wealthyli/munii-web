@@ -1,10 +1,23 @@
 'use client'
 import { googlePlay } from "@/public/images";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { IoLogoApple } from "react-icons/io";
+import ComingSoonModal from './ComingSoonModal'
 
 function CTA() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = () => {
+      setIsModalOpen(prev => !prev)
+    }
+
+
+  const closeModal = () => {
+    setIsModalOpen(prev => !prev)
+  }
+
   return (
     <div
       className="relative top-[12rem] lg:top-20 w-[100%] rounded-[30px] h-[60vh] flex flex-col items-center justify-center"
@@ -24,14 +37,14 @@ function CTA() {
         </p>
       </div>
       <div className="mt-8 flex flex-col lg:flex-row gap-4">
-        <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
+        <button onClick={openModal} className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
           <Image src={googlePlay} alt="google play" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">
             <h1 className="capitalize text-lg">Get it On</h1>
             <h3 className="font-semibold text-2xl">Google Play</h3>
           </div>
         </button>
-        <button className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
+        <button onClick={openModal} className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
           <IoLogoApple className="text-white w-[52px] h-[56px]" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">
             <h1 className="capitalize text-lg">Get it On</h1>
@@ -39,6 +52,7 @@ function CTA() {
           </div>
         </button>
       </div>
+      {isModalOpen && <ComingSoonModal closeModal={closeModal} />}
     </div>
   );
 }

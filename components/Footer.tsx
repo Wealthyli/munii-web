@@ -27,7 +27,7 @@ function Footer() {
       <div className="border-2 w-full border-white mb-4" />
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
         <div className="text-white">
-          <h1 className="text-sm">&#169;{getCurrentYear()} Munii. All rights reserved</h1>
+          <h1 className="text-sm">&#169;{getCurrentYear()} Munii Finance. All rights reserved</h1>
         </div>
         <div className="text-white flex gap-8">
           <Link href="/terms">Terms of Service</Link>
