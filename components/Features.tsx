@@ -83,7 +83,7 @@ function Features() {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={[{ x: [-40, 0] }, { opacity: 1 }]}
+            whileInView={[{ x: [-20, 0] }, { opacity: 1 }]}
             transition={{ duration: 1.5, ease: "easeInOut" }}
           >
             <Image
