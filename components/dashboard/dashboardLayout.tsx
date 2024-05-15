@@ -21,12 +21,14 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ menuItems }) => {
 
   const handleItemClick = (key: string) => {
     setSelectedItem(key);
+    setNavState(false);
   };
 
   return (
     <HStack alignItems="flex-start" spacing={0}>
       <SideBar
         menuItems={menuItems}
+        selectedItem={selectedItem}
         navState={navState}
         setNavState={setNavState}
         onItemClick={handleItemClick}
@@ -35,11 +37,13 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ menuItems }) => {
         ml={["0px", "0px", "250px", "250px"]}
         minH="100vh"
         w="100%"
-        bg="#F4F2EE"
+        // bg="#F4F2EE"
       >
-        <Box w="100%" p="0px 20px" mt="10px">
-          <TopBar />
-          {menuItems.find((item) => item.key === selectedItem)?.content}
+        <Box w="100%">
+          <TopBar setNavState={setNavState} />
+          <Box p={["10px", "10px", "20px", "20px"]}>
+            {menuItems.find((item) => item.key === selectedItem)?.content}
+          </Box>
         </Box>
       </VStack>
     </HStack>

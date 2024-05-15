@@ -16,6 +16,8 @@ import Analysis from './Analysis.png'
 import track from './Track-pic.png'
 import budg from './Analysis_.png'
 import doe from './doe.png'
+import avatar from './avatar.png'
+import logo_green from './logo-green.svg'
 
 export {
   account,
@@ -35,5 +37,7 @@ export {
   Analysis,
   track,
   budg,
-  doe
+  doe,
+  avatar,
+  logo_green
 }

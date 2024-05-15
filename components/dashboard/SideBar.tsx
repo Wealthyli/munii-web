@@ -6,15 +6,12 @@ import {
   List,
   ListIcon,
   ListItem,
-  Button,
   VStack,
   HStack,
-  Text,
 } from "@chakra-ui/react";
-import { GiStack } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { IconType } from "react-icons";
-import { logo } from "@/public/images/index";
+import { logo_green } from "@/public/images";
 import Image from "next/image";
 
 interface MenuItem {
@@ -24,6 +21,7 @@ interface MenuItem {
 
 interface SideBarProps {
   menuItems: MenuItem[];
+  selectedItem: string;
   navState: Boolean;
   setNavState: (state: any) => void;
   onItemClick: (key: string) => void;
@@ -33,6 +31,7 @@ interface SideBarProps {
 
 const SideBar: React.FC<SideBarProps> = ({
   menuItems,
+  selectedItem,
   navState,
   setNavState,
   onItemClick,
@@ -62,8 +61,8 @@ const SideBar: React.FC<SideBarProps> = ({
           pb="0"
           justifyContent="space-between"
         >
-          <Image width={120} alt="logo" src={logo} />
-          <Box color="black" display={["block", "block", "none", "none"]}>
+          <Image width={120} alt="logo" src={logo_green} />
+          <Box color="white" display={["block", "block", "none", "none"]}>
             <IoMdClose onClick={() => setNavState(false)} />
           </Box>
         </HStack>
@@ -74,17 +73,21 @@ const SideBar: React.FC<SideBarProps> = ({
                 key={i}
                 display="flex"
                 alignItems="center"
-                fontSize="15px"
-                fontWeight="700"
+                fontSize="16px"
+                fontWeight="400"
                 pl="20px"
                 py="10px"
                 cursor="pointer"
                 onClick={() => onItemClick(item.key)}
-                // bg={isActive(item.activeKey) ? "#EBE6DF" : "#FFFFFF"}
-                // color={isActive(item.activeKey) ? "#FF9205" : "#191919"}
-                // _hover={{ borderLeft: "3px solid #FF9205" }}
+                color={item.key === selectedItem ? "brand.500" : "white"}
+                borderTop="1px solid black"
+                borderBottom="1px solid black"
+                _hover={{
+                  borderTop: "1px solid rgba(85, 85, 85, 0.3)",
+                  borderBottom: "1px solid rgba(85, 85, 85, 0.3)",
+                }}
               >
-                {/* <ListIcon as={item.icon} color="inherit" fontSize="20px" /> */}
+                <ListIcon as={item.icon} color="brand.500" fontSize="20px" />
                 {item.key}
               </ListItem>
             );
