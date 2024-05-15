@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Header, MainBody, Footer, CTA, Hero } from "@/components";
 
 export default function Home() {
