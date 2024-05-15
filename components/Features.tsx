@@ -8,17 +8,15 @@ import { motion } from "framer-motion";
 import ComingSoonModal from "./ComingSoonModal";
 
 function Features() {
-
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
-      setIsModalOpen(prev => !prev)
-    }
-
+    setIsModalOpen((prev) => !prev);
+  };
 
   const closeModal = () => {
-    setIsModalOpen(prev => !prev)
-  }
+    setIsModalOpen((prev) => !prev);
+  };
 
   const Card = ({ title, text }: CardProp) => {
     return (
@@ -198,7 +196,10 @@ function Features() {
         </div>
       </section>
       <div className="flex items-center justify-center mt-16">
-        <button onClick={openModal} className="text-primary bg-black w-[210px] h-[56px] flex items-center justify-center rounded-[20px] font-semibold">
+        <button
+          onClick={openModal}
+          className="text-primary bg-black w-[210px] h-[56px] flex items-center justify-center rounded-[20px] font-semibold"
+        >
           Get Started
         </button>
       </div>
