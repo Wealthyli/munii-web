@@ -3,17 +3,8 @@
 import { useState } from "react";
 import { Box, HStack, VStack } from "@chakra-ui/react";
 import { SideBar, TopBar } from "./index";
-import { IconType } from "react-icons";
+import { DashboardLayoutProps } from "@/types";
 
-interface MenuItem {
-  key: string;
-  content: React.ReactNode;
-  icon?: IconType;
-}
-
-interface DashboardLayoutProps {
-  menuItems: MenuItem[];
-}
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ menuItems }) => {
   const [selectedItem, setSelectedItem] = useState("Dashboard");
