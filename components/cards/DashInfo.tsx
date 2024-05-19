@@ -1,7 +1,21 @@
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
-const DashInfo = () => {
+interface DashInfoProps {
+  title: string;
+  value: string;
+  rate: string;
+  compared: string;
+  sign: Boolean;
+}
+
+const DashInfo: React.FC<DashInfoProps> = ({
+  title,
+  value,
+  rate,
+  compared,
+  sign,
+}) => {
   return (
     <VStack
       w={["100%", "100%", "375px", "375px"]}
@@ -14,23 +28,24 @@ const DashInfo = () => {
       justifyContent="space-between"
     >
       <Text as="h3" fontSize="16px" fontWeight="400" color="#555555">
-        Active Users
+        {title}
       </Text>
 
       <VStack alignItems="flex-start">
         <HStack>
           {" "}
           <Text as="h1" fontSize="24px" fontWeight="600">
-            10,540k
+            {value}
           </Text>
           <Text
             ml="10px"
             as="span"
             fontSize="16px"
             fontWeight="400"
-            color="#32A50A"
+            color={sign ? "#32A50A" : "red"}
           >
-            +56%
+            {sign ? "+" : "-"}
+            {rate}
           </Text>
         </HStack>
         <Text
@@ -39,7 +54,7 @@ const DashInfo = () => {
           fontWeight="400"
           color="rgba(85, 85, 85, 0.6)"
         >
-          Compared to (4,560 last month)
+          {compared}
         </Text>
       </VStack>
     </VStack>

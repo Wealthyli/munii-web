@@ -1,32 +1,66 @@
 import { DashInfo } from "@/components/cards";
 import { UserJoinedChart } from "@/components/charts";
 import PerformanceChart from "@/components/charts/PerformanceChart";
-import { HStack,  VStack } from "@chakra-ui/react";
-import React from "react";
+import { DashTable } from "@/components/tables";
+import { HStack, VStack } from "@chakra-ui/react";
+import React, { Fragment } from "react";
+import TopBar from "../TopBar";
 
-const DashboardPage = () => {
+type DashboardPageProps = {
+  setNavState: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const DashboardPage: React.FC<DashboardPageProps> = ({ setNavState }) => {
   return (
-    <VStack w="full">
-      <HStack
-        w="full"
-        justifyContent={["center", "center", "space-between", "space-between"]}
-        flexWrap="wrap"
-      >
-        <DashInfo />
-        <DashInfo />
-        <DashInfo />
-      </HStack>
-      <HStack
-        spacing={8}
-        alignItems="flex-start"
-        w="full"
-        mt="10px"
-        flexDirection={["column", "column", "row", "row"]}
-      >
-        <UserJoinedChart />
-        <PerformanceChart />
-      </HStack>
-    </VStack>
+    <Fragment>
+      <TopBar setNavState={setNavState} />
+      <VStack w="full" p={["10px", "10px", "20px", "20px"]}>
+        <HStack
+          w="full"
+          justifyContent={[
+            "center",
+            "center",
+            "space-between",
+            "space-between",
+          ]}
+          flexWrap="wrap"
+        >
+          <DashInfo
+            title="Active Users"
+            value="10,540k"
+            rate="56%"
+            compared="Compared to (4,560 last month)"
+            sign={true}
+          />
+          <DashInfo
+            title="Inactive Users"
+            value="10,540k"
+            rate="56%"
+            compared="Compared to (4,560 last month)"
+            sign={false}
+          />
+          <DashInfo
+            title="Suspended Users"
+            value="10,540k"
+            rate="56%"
+            compared="Compared to (4,560 last month)"
+            sign={true}
+          />
+        </HStack>
+        <HStack
+          spacing={8}
+          alignItems="flex-start"
+          w="full"
+          mt="10px"
+          flexDirection={["column", "column", "row", "row"]}
+        >
+          <UserJoinedChart />
+          <PerformanceChart />
+        </HStack>
+
+        <DashTable />
+      </VStack>
+    </Fragment>
   );
 };
 

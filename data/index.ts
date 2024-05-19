@@ -123,3 +123,48 @@ export const userChartData = [
         amt: 2210,
       },
   ];
+
+  export const userTableData = [
+    {
+      name:'John Doe',
+      email:'johndoe@gmail.com',
+      phone:'+2349086567871',
+      budget:80,
+      status:'Inactive'
+    },
+    {
+      name:'John Doe',
+      email:'johndoe@gmail.com',
+      phone:'+2349086567871',
+      budget:30,
+      status:'Active'
+    },
+    {
+      name:'John Doe',
+      email:'johndoe@gmail.com',
+      phone:'+2349086567871',
+      budget:80,
+      status:'Inactive'
+    },
+    {
+      name:'John Doe',
+      email:'johndoe@gmail.com',
+      phone:'+2349086567871',
+      budget:80,
+      status:'Active'
+    },
+    {
+      name:'John Doe',
+      email:'johndoe@gmail.com',
+      phone:'+2349086567871',
+      budget:80,
+      status:'Inactive'
+    },
+    {
+      name:'John Doe',
+      email:'johndoe@gmail.com',
+      phone:'+2349086567871',
+      budget:80,
+      status:'Active'
+    }
+  ]
