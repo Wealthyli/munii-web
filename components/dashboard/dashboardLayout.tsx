@@ -1,13 +1,17 @@
 "use client";
 
-import React, { useState, ReactElement, cloneElement } from "react";
+import React, { useState } from "react";
 import { Box, HStack, VStack } from "@chakra-ui/react";
 import { SideBar } from "./index";
 import { DashboardLayoutProps } from "@/types";
+  
+const DashboardLayout: React.FC<DashboardLayoutProps> = ({
+  navState,
+  setNavState,
+  menuItems,
+}) => {
+  const [selectedItem, setSelectedItem] = useState(menuItems[0].key);
 
-const DashboardLayout: React.FC<DashboardLayoutProps> = ({ menuItems }) => {
-  const [selectedItem, setSelectedItem] = useState("Dashboard");
-  const [navState, setNavState] = useState(false);
 
   const handleItemClick = (key: string) => {
     setSelectedItem(key);
@@ -29,8 +33,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ menuItems }) => {
       />
       <VStack ml={["0px", "0px", "250px", "250px"]} minH="100vh" w="100%">
         <Box w="100%">
-          {React.isValidElement(SelectedContent) &&
-            cloneElement(SelectedContent as ReactElement<any>, { setNavState })}
+          {React.isValidElement(SelectedContent) && SelectedContent}
         </Box>
       </VStack>
     </HStack>
