@@ -6,7 +6,7 @@ import PerformanceChart from "@/components/charts/PerformanceChart";
 import { DashTable } from "@/components/tables";
 import { HStack, VStack } from "@chakra-ui/react";
 import { DashboardPageProps } from "@/types";
-
+        
 const DashboardPage: React.FC<DashboardPageProps> = ({ setNavState }) => {
   return (
     <Fragment>

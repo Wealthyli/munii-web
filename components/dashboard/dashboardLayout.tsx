@@ -4,13 +4,14 @@ import React, { useState } from "react";
 import { Box, HStack, VStack } from "@chakra-ui/react";
 import { SideBar } from "./index";
 import { DashboardLayoutProps } from "@/types";
-
+  
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({
   navState,
   setNavState,
   menuItems,
 }) => {
   const [selectedItem, setSelectedItem] = useState(menuItems[0].key);
+
 
   const handleItemClick = (key: string) => {
     setSelectedItem(key);

@@ -49,7 +49,7 @@ function Header() {
 
   return (
     <header className="">
-      <nav className="flex items-center justify-between px-4 lg:px-[5rem] py-[1.5rem]">
+      <nav className="flex items-center justify-between px-4 lg:px-[5rem] md:py-[1.5rem]">
         <Link className="" href="/">
           <Image src={logo} alt="logo" />
         </Link>
