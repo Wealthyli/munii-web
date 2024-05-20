@@ -41,4 +41,25 @@ export interface MenuLayoutItem {
 
 export interface DashboardLayoutProps {
   menuItems: MenuLayoutItem[];
+  navState: Boolean;
+  setNavState: (state: any) => void;
+}
+
+
+// Dashboard Page props
+
+export interface DashboardPageProps {
+  setNavState: (state: any) => void;
+}
+
+//Notification Page Props
+
+export interface NotificationPageProps {
+  setNavState: (state: any) => void;
+}
+
+//Subscription Page Props
+
+export interface SubscriptionPageProps {
+  setNavState: (state: any) => void;
 }

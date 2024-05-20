@@ -1,14 +1,11 @@
+import TopBar from "../TopBar";
+import React, { Fragment } from "react";
 import { DashInfo } from "@/components/cards";
 import { UserJoinedChart } from "@/components/charts";
 import PerformanceChart from "@/components/charts/PerformanceChart";
 import { DashTable } from "@/components/tables";
 import { HStack, VStack } from "@chakra-ui/react";
-import React, { Fragment } from "react";
-import TopBar from "../TopBar";
-
-type DashboardPageProps = {
-  setNavState: React.Dispatch<React.SetStateAction<boolean>>;
-};
+import { DashboardPageProps } from "@/types";
 
 const DashboardPage: React.FC<DashboardPageProps> = ({ setNavState }) => {
   return (
