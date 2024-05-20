@@ -23,17 +23,19 @@ export default function UserubscriptionGraph() {
     '#A1DAFA',
   ];
   return (
-    <div className='flex items-center justify-between w-full'>
-      <div className='flex flex-col items-start gap-2 w-[67%]'>
+    <div className='flex items-center justify-between w-full flex-wrap'>
+      <div className='flex flex-col items-start gap-2 w-full md:w-[67%]'>
         <h2 className='text-[20px] font-medium'>Performance</h2>
         <div className='p-2 bg-white border border-dark-gray shadow-2xl rounded-xl w-full h-[298px]'>
           <UserSubscriptionLineGraph  labels={labels} datasets={[dataset1, dataset2]} />
         </div>
       </div>
-      <div className=' w-[30%] '>
+      <div className=' w-full md:w-[30%] '>
+      <div className='flex flex-col items-start gap-2 w-full'>
         <h2 className='text-[20px] font-medium'>Subscription by Plans</h2>
         <div className='p-2 bg-white border border-dark-gray shadow-2xl rounded-xl w-full h-[298px]'>
-        <UserSubscriptionPieChart labels={pieChartLabels} data={pieChartData} backgroundColors={pieChartColors}/>
+            <UserSubscriptionPieChart labels={pieChartLabels} data={pieChartData} backgroundColors={pieChartColors} />
+            </div>
         </div>
       </div>
     </div>

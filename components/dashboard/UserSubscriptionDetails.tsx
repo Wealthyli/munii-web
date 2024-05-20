@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ButtonComponent from './ButtonComponent';
+import DropDownMenu from './DropDownMenu';
+import SearchIcon from '@/public/images/icons/SearchIcon';
 
 interface SubscriptionDetail {
     id: number;
@@ -68,6 +70,16 @@ const UserSubscriptionDetail:SubscriptionDetail[] = [
     },
 ]
 
+const Monthly = [
+    {
+      text: 'Monthly',
+      onClick: () => console.log('Monthly clicked'),
+    },
+    {
+      text: 'Yearly',
+      onClick: () => console.log('Yearly clicked'),
+    },
+  ];
 
 
 const UserSubscriptionDetails: React.FC = () => {
@@ -79,8 +91,8 @@ const UserSubscriptionDetails: React.FC = () => {
     ];
 
     return (
-        <div className='flex flex-col items-start justify-center gap-[29px] w-full '>
-            <div className='flex items-start justify-between w-full'>
+        <div className='flex flex-col items-start justify-center gap-[29px] w-full'>
+            <div className='flex items-start justify-between w-full flex-wrap gap-4'>
                 <div className='rounded-3xl border border-dark-gray shadow-2xl text-[14px] text-lgrey/01'>
                     {data.map((item, index) => (
                 <ButtonComponent
@@ -93,9 +105,15 @@ const UserSubscriptionDetails: React.FC = () => {
                 />
             ))}
                 </div>
-                <div>
-                    searchicon
-                    filter
+                <div className='flex items-center justify-center gap-4 '>
+
+                    <div className='rounded-full border border-grey/10 w-10 h-10 flex items-center justify-center'>
+                        <SearchIcon/>
+                    </div>
+
+                    <div>
+                    <DropDownMenu menuItems={Monthly} buttonText="filter" />
+                    </div>
                 </div>
             </div>
             <div className='w-full border border-dark-gray shadow-2xl rounded-3xl flex flex-col items-start p-2'>
@@ -114,7 +132,11 @@ const UserSubscriptionDetails: React.FC = () => {
                     </tr>
                 </thead> 
                 <tbody>
-                   {UserSubscriptionDetail.map((details) => (
+                        {UserSubscriptionDetail.filter(detail =>
+                            (selected === 'All Subscribers') ||
+                            (selected === 'Active Subscribers' && detail.status === 'Active') || 
+                            (selected === 'Cancelled Subscribers' && detail.status === 'Cancelled')
+                        ).map((details) => (
                         <tr key={details.id}>
                          <td>{details.id}</td>
                          <td>{details.date}</td>
