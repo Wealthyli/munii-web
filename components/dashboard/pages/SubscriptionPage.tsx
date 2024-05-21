@@ -1,6 +1,8 @@
 import React from "react";
 import {UserSubscriptionStats, UserubscriptionGraph, UserSubscriptionDetails} from "@/components/dashboard/index";
 import DropDownMenu from "../DropDownMenu";
+import { SubscriptionPageProps } from "@/types";
+
 
 const menuData = [
   {
@@ -37,7 +39,7 @@ const Monthly = [
 ];
 
 
-const SubscriptionPage = () => {
+const SubscriptionPage: React.FC<SubscriptionPageProps> = ({ setNavState }) => {
   return (
     <div className=" flex flex-col justify-center items-start gap-8 w-full overflow-hidden">
       <div className="flex items-start justify-between w-full">
