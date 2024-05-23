@@ -51,7 +51,7 @@ const LineGraph: React.FC<LineGraphProps> = ({ labels,  datasets }) => {
         position: 'top',
         align:"start",
         labels: {
-          usePointStyle: true, 
+          usePointStyle: true,
         },
       }
     },
