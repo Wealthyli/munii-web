@@ -17,8 +17,16 @@ const config: Config = {
         'primary' : '#A4C528',
         'text' : '#191A1A',
         's-text' : '#555555CC',
-        'box-bg': '#7C7C7C'
+        'box-bg': '#7C7C7C',
+        "dark-gray": "#55555533",
+        "white": "#ffff",
+        "light-gray": "#55555533",
+        "grey/01":"#555555",
       },
+      boxShadow: {
+        "2xl": "1px 5px 40px 8px #6E758812",
+        "3xl": "1px 5px 40px 8px rgba(110, 117, 136, 0.07)",
+      }
     },
   },
   plugins: [],
