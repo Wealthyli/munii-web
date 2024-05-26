@@ -22,7 +22,7 @@ const config: Config = {
         "white": "#ffff",
         "light-gray": "#55555533",
         "grey/01": "#555555",
-        "primary/01": "rgb(102 50 142 / var(--tw-text-opacity))",
+        "primary/01": "rgb(102 50 142)",
         "border/gray": "#e5e7eb"
       },
       boxShadow: {

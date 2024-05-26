@@ -15,11 +15,14 @@ const page = () => {
             <h2 className='text-primary/01 mb-2 text-lg'>1.1 Personal Information</h2>
             <p className=' mb-2 '>When you register for or use our services, we may collect the following personal information:</p>
             <p>
-              Contact Information : Name, email address, phone number, and postal address.<br />
+              Contact Information : Name, email address, phone number, and postal address.</p>
+            <p>
               Financial Information : Bank account details, transaction history, investment information, and
-              credit/debit card information.<br />
+              credit/debit card information.</p>
+            <p>
               Identification Information : Government-issued ID, date of birth, and national identity number
-              (NIN).<br />
+              (NIN).</p>
+            <p>
               Account Information: Username, password, and other credentials for accessing our services.
             </p>
           </div>
@@ -29,9 +32,11 @@ const page = () => {
               We may also collect information on how the service is accessed and used. This may include:
             </p>
             <p>
-              Device Information : IP address, browser type, operating system, and device type.<br />
+              Device Information : IP address, browser type, operating system, and device type.</p>
+            <p>
               Log Data : Details of your use of our services, including timestamps, pages viewed, and other
-              interaction data.<br />
+              interaction data.</p>
+            <p>
               Location Information : Approximate location based on your IP address or GPS data.
             </p>
           </div>
@@ -48,18 +53,14 @@ const page = () => {
           <div className='mb-6'>
             <p className=' mb-2 '>We use the information we collect for various purposes, including :
             </p>
-            <p>
-              Providing and Maintaining Services : To deliver, maintain, and improve our services and features
-              <br />
-              Account Management : To manage your account, including processing transactions and providing customer support.<br />
-              Personalization: To tailor our services to your preferences and financial profile.
-              <br />
-              Communication : To contact you with updates, newsletters, marketing or promotional materials, and other information that may be of interest to you.
-              <br />
-              Security : To monitor and enhance the security of our services and protect against fraud.
-              <br />
-              Legal Compliance : To comply with applicable laws, regulations, and legal processes.
-            </p>
+            <ul>
+              <li> Providing and Maintaining Services : To deliver, maintain, and improve our services and features</li>
+              <li>  Account Management : To manage your account, including processing transactions and providing customer support.</li>
+              <li>  Personalization: To tailor our services to your preferences and financial profile.</li>
+              <li> Communication : To contact you with updates, newsletters, marketing or promotional materials, and other information that may be of interest to you.</li>
+              <li>   Security : To monitor and enhance the security of our services and protect against fraud.</li>
+              <li>  Legal Compliance : To comply with applicable laws, regulations, and legal processes.</li>
+            </ul>
           </div>
         </article>
         <article >
@@ -67,24 +68,24 @@ const page = () => {
           <div className='mb-6'>
             <p className=' mb-2 '>We may share your information with third parties under the following circumstances :
             </p>
-            <p>
-              Service Providers : We may share your information with third-party service providers who perform services on our behalf, such as payment processing, data analysis, and customer support.
-              <br />
-              Business Transfers : In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be transferred as part of that transaction.<br />
-              Legal Requirements : We may disclose your information if required to do so by law or in response to valid requests by public authorities.
-              <br />
-              Consent : We may share your information with your consent or at your direction.
-            </p>
+            <ul>
+              <li>  Service Providers : We may share your information with third-party service providers who perform services on our behalf, such as payment processing, data analysis, and customer support.</li>
+              <li> Business Transfers : In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be transferred as part of that transaction.</li>
+              <li>    Legal Requirements : We may disclose your information if required to do so by law or in response to valid requests by public authorities.</li>
+              <li>   Consent : We may share your information with your consent or at your direction.</li>
+            </ul>
           </div>
         </article>
         <article >
           <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>4. Data Security</h1>
           <div className='mb-6'>
-            <p className=' mb-2 '>We implement a variety of security measures to ensure the protection of your personal information. These measures include:
+            <p className=' mb-2 '>We implement a variety of security measures to ensure the protection of your personal information. These measures include :
             </p>
             <p>
-              Encryption: Using SSL/TLS encryption to protect data transmitted over the internet.
-              Access Controls: Limiting access to your personal information to authorized personnel only.
+              Encryption: Using SSL/TLS encryption to protect data transmitted over the internet.</p>
+            <p>
+              Access Controls: Limiting access to your personal information to authorized personnel only.</p>
+            <p>
               Security Audits: Regularly auditing our systems and practices to ensure data security.
             </p>
           </div>
@@ -101,15 +102,15 @@ const page = () => {
           <div className='mb-6'>
             <p className=' mb-2 '>Depending on your jurisdiction, you may have the following rights regarding your personal information:
             </p>
-            <p>
-              Access: The right to access the personal information we hold about you. <br />
-              Correction: The right to request correction of inaccurate or incomplete information. <br />
-              Deletion: The right to request the deletion of your personal information. <br />
-              Restriction: The right to request the restriction of processing your personal information. <br />
-              Objection: The right to object to the processing of your personal information.  <br />
-              Portability: The right to request the transfer of your personal information to another entity. <br />
-              To exercise any of these rights, please contact us at [contact email].
-            </p>
+            <ul>
+              <li> Access: The right to access the personal information we hold about you.</li>
+              <li>  Correction: The right to request correction of inaccurate or incomplete information.</li>
+              <li>    Deletion: The right to request the deletion of your personal information.</li>
+              <li>  Restriction: The right to request the restriction of processing your personal information. </li>
+              <li>     Objection: The right to object to the processing of your personal information.</li>
+              <li> Portability: The right to request the transfer of your personal information to another entity.</li>
+              <li> To exercise any of these rights, please contact us at [contact email].</li>
+            </ul>
           </div>
         </article>
         <article >
@@ -131,10 +132,12 @@ const page = () => {
           <div className='mb-6'>
             <p className=' mb-2 '>If you have any questions or concerns about this Privacy Policy, please contact us at:
             </p>
-            <p className=' mb-2 '>
-              Email: support@munii.finance <br />
-              Address:1397 Hakeem Agboola Crescent, Amuwo Odofin, Lagos, Nigeria
-            </p>
+            <div className=' mb-2 '>
+              <p>Email: support@munii.finance </p>
+              <p>
+                Address:1397 Hakeem Agboola Crescent, Amuwo Odofin, Lagos, Nigeria
+              </p>
+            </div>
             <p className=' mb-2 '>
               By using Munii, you acknowledge that you have read and understood this Privacy Policy and
               agree to its terms.
