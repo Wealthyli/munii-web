@@ -4,14 +4,14 @@ import DashboardLayout from './dashboardLayout';
 import DashboardPage from './pages/DashboardPage';
 import NotificationPage from './pages/NotificationPage';
 import SubscriptionPage from './pages/SubscriptionPage';
-import UserSubscriptionDetails from "./UserSubscriptionDetails";
-import UserSubscriptionStats from "./UserSubscriptionStats";
-import UserubscriptionGraph from "./UserSubscriptionGraph";
+import UserSubscriptionDetails from "./userSubscription/UserSubscriptionDetails";
+import UserSubscriptionStats from "./userSubscription/UserSubscriptionStats";
+import UserubscriptionGraph from "./userSubscription/UserSubscriptionGraph";
 import ButtonComponent from "./ButtonComponent";
-import UserSubscriptionLineGraph from './UserSubscriptionLineGraph'
-import UserSubscriptionPieChart from './UserSubscriptionPieChart'
-import IncreaseIcon from "@/public/images/icons/IncreaseIcon";
-import DecreaseIcon from "@/public/images/icons/DecreaseIcon";
+import UserSubscriptionLineGraph from './userSubscription/UserSubscriptionLineGraph'
+import UserSubscriptionPieChart from './userSubscription/UserSubscriptionPieChart'
+import IncreaseIcon from "@/public/images/icons/IncreaseIcon.svg";
+import DecreaseIcon from "@/public/images/icons/DecreaseIcon.svg";
 
 
 
@@ -23,7 +23,7 @@ export {
   NotificationPage,
   SubscriptionPage,
   UserSubscriptionDetails,
-  UserSubscriptionStats, 
+  UserSubscriptionStats,
   UserubscriptionGraph,
   ButtonComponent,
   UserSubscriptionLineGraph,

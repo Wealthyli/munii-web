@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
-import ButtonComponent from './ButtonComponent';
+import ButtonComponent from '../ButtonComponent';
 import { Input, Select } from "@chakra-ui/react";
 import { BiSearch } from "react-icons/bi";
+import { SubscriptionDetail } from '../../../types';
 
-interface SubscriptionDetail {
-    id: number;
-    date: string;
-    status: string;
-    avatar: string;
-    customer: string;
-    plan: string;
-    revenue: string;
-}
+
 
 const UserSubscriptionDetail: SubscriptionDetail[] = [
     {

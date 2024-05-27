@@ -1,23 +1,24 @@
 import { IconType } from "react-icons"
+// import { notificationData } from '../data/index';
 
 
 export interface CardProp {
-  title: string
-  text: string
+  title: string;
+  text: string;
 }
 
 export interface TestimonialCardProp {
-  image: any
-  text: string
-  name: string
+  image: any;
+  text: string;
+  name: string;
 }
 
-// TopBar Props 
+// TopBar Props
 export interface TopBarProps {
   setNavState: (state: any) => void;
 }
 
-// Sidebar props 
+// Sidebar props
 export interface MenuItem {
   key: string;
   icon?: IconType;
@@ -31,8 +32,7 @@ export interface SideBarProps {
   onItemClick: (key: string) => void;
 }
 
-
-// Dashboard Layout 
+// Dashboard Layout
 export interface MenuLayoutItem {
   key: string;
   content: React.ReactNode;
@@ -44,7 +44,6 @@ export interface DashboardLayoutProps {
   navState: Boolean;
   setNavState: (state: any) => void;
 }
-
 
 // Dashboard Page props
 
@@ -58,8 +57,63 @@ export interface NotificationPageProps {
   setNavState: (state: any) => void;
 }
 
-//Subscription Page Props
+// Notification Item Props
+export interface NotificationItemProps {
+  title: string
+  tag: string
+  content: string
+  timestamp: string
+  setView: (state: any) => void;
+  setCurrentChat: (state: any) => void;
+}
+export interface NotificationDataProps {
+  title: string
+  tag: string
+  content: string
+  timestamp: string
+}
+export interface ChatBoxProps {
+  title: string
+  tag: string
+  content: string
+  timestamp: string
+  view: Number
+  setView: (state: any) => void;
+}
 
-export interface SubscriptionPageProps {
+export interface NotificationListProps {
+  view: Number
+  notificationData: NotificationDataProps[];
   setNavState: (state: any) => void;
+  setCurrentChat: (state: any) => void;
+  setView: (state: any) => void;
+}
+
+
+export interface SubscriptionDetail {
+  id: number;
+  date: string;
+  status: string;
+  avatar: string;
+  customer: string;
+  plan: string;
+  revenue: string;
+}
+
+
+export interface Stat {
+  title: string;
+  value: string;
+  percentage: string;
+  comparedTo: string;
+  color: string;
+}
+
+export interface UserStatProps {
+  title: string;
+  value: string;
+  percentage: string;
+  comparedTo: string;
+  color: string;
+  key: number;
 }
