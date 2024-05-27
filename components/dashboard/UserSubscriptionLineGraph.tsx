@@ -33,14 +33,14 @@ interface LineGraphProps {
   datasets: Dataset[];
 }
 
-const LineGraph: React.FC<LineGraphProps> = ({ labels,  datasets }) => {
+const LineGraph: React.FC<LineGraphProps> = ({ labels, datasets }) => {
   const chartData = {
     labels: labels,
     datasets: datasets.map(dataset => ({
       ...dataset,
       fill: false,
       tension: 0.4,
-      spanGaps: true, 
+      spanGaps: true,
     })),
   };
 
@@ -49,15 +49,15 @@ const LineGraph: React.FC<LineGraphProps> = ({ labels,  datasets }) => {
     plugins: {
       legend: {
         position: 'top',
-        align:"start",
+        align: "start",
         labels: {
-          usePointStyle: true, 
+          usePointStyle: true,
         },
       }
     },
     animation: {
-      duration: 2000, 
-      easing: 'easeInOutQuad', 
+      duration: 2000,
+      easing: 'easeInOutQuad',
     },
     maintainAspectRatio: false,
   };
