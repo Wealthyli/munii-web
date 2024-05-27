@@ -63,3 +63,31 @@ export interface NotificationPageProps {
 export interface SubscriptionPageProps {
   setNavState: (state: any) => void;
 }
+
+export interface SubscriptionDetail {
+  id: number;
+  date: string;
+  status: string;
+  avatar: string;
+  customer: string;
+  plan: string;
+  revenue: string;
+}
+
+
+export interface Stat {
+  title: string;
+  value: string;
+  percentage: string;
+  comparedTo: string;
+  color: string;
+}
+
+export interface UserStatProps {
+  title: string;
+  value: string;
+  percentage: string;
+  comparedTo: string;
+  color: string;
+  key: number;
+}
