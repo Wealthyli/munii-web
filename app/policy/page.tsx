@@ -10,9 +10,9 @@ const page = () => {
       </div>
       <div className='mx-auto max-w-3xl px-4 py-16 flex flex-col gap-4 z-10 md:mt-[7rem] mt-[5rem]'>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>1. Information We Collect</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>1. Information We Collect</h1>
           <div className='mb-6'>
-            <h2 className='text-primary/01 mb-2 text-lg'>1.1 Personal Information</h2>
+            <h2 className='text-black mb-2 text-lg'>1.1 Personal Information</h2>
             <p className=' mb-2 '>When you register for or use our services, we may collect the following personal information:</p>
             <p>
               Contact Information : Name, email address, phone number, and postal address.</p>
@@ -27,7 +27,7 @@ const page = () => {
             </p>
           </div>
           <div className='mb-6'>
-            <h2 className='text-primary/01 mb-2 text-lg'>1.2 Usage Data</h2>
+            <h2 className='text-black mb-2 text-lg'>1.2 Usage Data</h2>
             <p className=' mb-2 '>
               We may also collect information on how the service is accessed and used. This may include:
             </p>
@@ -41,7 +41,7 @@ const page = () => {
             </p>
           </div>
           <div className='mb-6'>
-            <h2 className='text-primary/01 mb-2 text-lg'>1.3 Cookies and Tracking Technologies</h2>
+            <h2 className='text-black mb-2 text-lg'>1.3 Cookies and Tracking Technologies</h2>
             <p>We use cookies and similar tracking technologies to track the activity on our service and store
               certain information. This helps us provide a better user experience by remembering your
               preferences and visits to our site.
@@ -49,7 +49,7 @@ const page = () => {
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>2. How We Use Your Information</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>2. How We Use Your Information</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>We use the information we collect for various purposes, including :
             </p>
@@ -64,7 +64,7 @@ const page = () => {
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>3. Sharing Your Information </h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>3. Sharing Your Information </h1>
           <div className='mb-6'>
             <p className=' mb-2 '>We may share your information with third parties under the following circumstances :
             </p>
@@ -77,7 +77,7 @@ const page = () => {
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>4. Data Security</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>4. Data Security</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>We implement a variety of security measures to ensure the protection of your personal information. These measures include :
             </p>
@@ -91,14 +91,14 @@ const page = () => {
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>5. Data Retention</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>5. Data Retention</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>We will retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy. We will also retain and use your information to comply with legal obligations, resolve disputes, and enforce our agreements.
             </p>
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>6. Your Rights</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>6. Your Rights</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>Depending on your jurisdiction, you may have the following rights regarding your personal information:
             </p>
@@ -114,21 +114,21 @@ const page = () => {
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>7. Children's Privacy</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>7. Children's Privacy</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>Our services are not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18, we will take steps to delete such information from  our servers.
             </p>
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>8. Changes to This Privacy Policy</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>8. Changes to This Privacy Policy</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top. We encourage you to review this Privacy Policy periodically for any changes.
             </p>
           </div>
         </article>
         <article >
-          <h1 className='text-primary/01 mb-4 font-extrabold text-2xl'>9. Contact Us</h1>
+          <h1 className='text-black mb-4 font-extrabold text-2xl'>9. Contact Us</h1>
           <div className='mb-6'>
             <p className=' mb-2 '>If you have any questions or concerns about this Privacy Policy, please contact us at:
             </p>

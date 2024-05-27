@@ -69,33 +69,61 @@ export interface NotificationPageProps {
 
 // Notification Item Props
 export interface NotificationItemProps {
-     title:string
-     tag:string
-     content:string
-     timestamp:string
-     setView:(state: any) => void;
-     setCurrentChat: (state: any) => void;
- }
+  title: string
+  tag: string
+  content: string
+  timestamp: string
+  setView: (state: any) => void;
+  setCurrentChat: (state: any) => void;
+}
 export interface NotificationDataProps {
-     title:string
-     tag:string
-     content:string
-     timestamp:string
- }
+  title: string
+  tag: string
+  content: string
+  timestamp: string
+}
 export interface ChatBoxProps {
-     title:string
-     tag:string
-     content:string
-     timestamp:string
-     view:Number
-     setView: (state: any) => void;
- }
+  title: string
+  tag: string
+  content: string
+  timestamp: string
+  view: Number
+  setView: (state: any) => void;
+}
 
 export interface NotificationListProps {
-  view:Number
-  notificationData:NotificationDataProps[];
-  setNavState:(state: any) => void;
+  view: Number
+  notificationData: NotificationDataProps[];
+  setNavState: (state: any) => void;
   setCurrentChat: (state: any) => void;
   setView: (state: any) => void;
 }
 
+
+export interface SubscriptionDetail {
+  id: number;
+  date: string;
+  status: string;
+  avatar: string;
+  customer: string;
+  plan: string;
+  revenue: string;
+}
+
+
+export interface Stat {
+  title: string;
+  value: string;
+  percentage: string;
+  comparedTo: string;
+  color: string;
+}
+
+export interface UserStatProps {
+  title: string;
+  value: string;
+  percentage: string;
+  comparedTo: string;
+  color: string;
+  key: number;
+}
