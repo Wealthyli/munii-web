@@ -1,12 +1,11 @@
 // @ts-nocheck
-'use client'
+"use client";
 import React from "react";
 import { TestimonialCardProp } from "@/types";
 import Image from "next/image";
 import { doe } from "@/public/images";
-import CTA from './CTA'
+import CTA from "./CTA";
 import { motion } from "framer-motion";
-
 
 function Testimonial() {
   const Card = ({ image, text, name }: TestimonialCardProp) => {
@@ -38,11 +37,12 @@ function Testimonial() {
   return (
     <div className="px-4 md:px-[5rem] bg-[#CAFF011A] w-[100vw] lg:h-[100vh] pt-8 lg:pt-20 ">
       <div className="flex flex-col gap-4 items-center justify-center">
-        <motion.h1 
-                      initial={{ opacity: 0 }}
-                      whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
-                      transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="text-[36px] text-center font-semibold leading-[54px] text-text max-w-[678px]">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="text-[36px] text-center font-semibold leading-[54px] text-text max-w-[678px]"
+        >
           What Our Customers Say About Us
         </motion.h1>
         <p className="text-s-text leading-[24px] text-[16px] text-center max-w-[549px]">

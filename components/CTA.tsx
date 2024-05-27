@@ -31,12 +31,12 @@ function CTA() {
         <h1 className="font-semibold text-white text-[32px] leading-[43px] max-w-[430px] text-center">
           Download Munii App for iOS or Android
         </h1>
-        <p className="max-w-[720px] text-center text-sm lg:text-2xl text-[#D9D9D9] leading-6">
+        <p className="w-[300px] md:max-w-[720px] text-center text-sm lg:text-2xl text-[#D9D9D9] leading-6">
           Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquets.
         </p>
       </div>
-      <div className="mt-8 flex flex-col lg:flex-row gap-4">
+      <div className="mt-8 flex flex-col md:flex-row gap-4">
         <button onClick={openModal} className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
           <Image src={googlePlay} alt="google play" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">
