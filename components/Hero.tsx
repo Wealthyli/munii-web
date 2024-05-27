@@ -19,7 +19,7 @@ function Hero() {
   };
 
   return (
-    <section className=" flex lg:flex-row px-12 lg:px-[5rem] items-center lg:justify-between mt-8 w-full ">
+    <section className=" flex lg:flex-row px-4 lg:px-[5rem] items-center lg:justify-between mt-8 w-full">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}

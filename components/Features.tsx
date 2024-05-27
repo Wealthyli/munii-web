@@ -41,7 +41,7 @@ function Features() {
       initial={{ opacity: 0 }}
       whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
       transition={{ duration: 1.5, ease: "easeInOut" }}
-      className="flex flex-col px-4 md:px-[5rem] "
+      className="flex flex-col px-4 md:px-[5rem]"
       id="services"
     >
       <div className="flex flex-col items-center justify-center gap-4 ">
@@ -79,7 +79,7 @@ function Features() {
           text="Automatically track your expenses across all your accounts. Receive real-time updates on your spending "
         />
       </div>
-      <section className="mt-24 flex flex-col gap-20 px-16">
+      <section className="mt-24 flex flex-col gap-20">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <motion.div
             initial={{ opacity: 0 }}
