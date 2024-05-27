@@ -1,7 +1,7 @@
 import React from "react";
-import { UserSubscriptionStats, UserubscriptionGraph, UserSubscriptionDetails } from "@/components/dashboard/index";
-import { Select } from '@chakra-ui/react'
 import { SubscriptionPageProps } from "@/types";
+import { UserSubscriptionStats, UserubscriptionGraph, UserSubscriptionDetails } from "@/components/dashboard/index";
+import { Select } from '@chakra-ui/react';
 
 
 const SubscriptionPage: React.FC<SubscriptionPageProps> = ({ setNavState }) => {
