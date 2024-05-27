@@ -1,5 +1,4 @@
 import { IconType } from "react-icons"
-import { notificationData } from '../data/index';
 
 
 export interface CardProp {
@@ -53,49 +52,14 @@ export interface DashboardPageProps {
   setNavState: (state: any) => void;
 }
 
-//Subscription Page Props
-
-export interface SubscriptionPageProps {
-  setNavState: (state: any) => void;
-}
-
-
-
 //Notification Page Props
 
 export interface NotificationPageProps {
   setNavState: (state: any) => void;
 }
 
-// Notification Item Props
-export interface NotificationItemProps {
-     title:string
-     tag:string
-     content:string
-     timestamp:string
-     setView:(state: any) => void;
-     setCurrentChat: (state: any) => void;
- }
-export interface NotificationDataProps {
-     title:string
-     tag:string
-     content:string
-     timestamp:string
- }
-export interface ChatBoxProps {
-     title:string
-     tag:string
-     content:string
-     timestamp:string
-     view:Number
-     setView: (state: any) => void;
- }
+//Subscription Page Props
 
-export interface NotificationListProps {
-  view:Number
-  notificationData:NotificationDataProps[];
-  setNavState:(state: any) => void;
-  setCurrentChat: (state: any) => void;
-  setView: (state: any) => void;
+export interface SubscriptionPageProps {
+  setNavState: (state: any) => void;
 }
-
