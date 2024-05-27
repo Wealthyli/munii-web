@@ -85,8 +85,8 @@ const UserSubscriptionDetails: React.FC = () => {
 
     return (
         <div className='flex flex-col items-start justify-center gap-[29px] w-full'>
-            <div className='flex items-start justify-between w-full flex-wrap gap-4'>
-                <div className='rounded-3xl border border-dark-gray shadow-2xl text-[14px] text-lgrey/01'>
+            <div className='flex items-start justify-between w-full flex-wrap gap-['>
+                <div className='rounded-3xl border border-dark-gray shadow-2xl text-[14px] text-lgrey/01 px-2'>
                     {data.map((item, index) => (
                         <ButtonComponent
                             key={index}
