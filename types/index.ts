@@ -1,5 +1,4 @@
 import { IconType } from "react-icons"
-import { notificationData } from '../data/index';
 
 
 export interface CardProp {
@@ -53,13 +52,6 @@ export interface DashboardPageProps {
   setNavState: (state: any) => void;
 }
 
-//Subscription Page Props
-
-export interface SubscriptionPageProps {
-  setNavState: (state: any) => void;
-}
-
-
 
 //Notification Page Props
 
@@ -99,6 +91,11 @@ export interface NotificationListProps {
   setView: (state: any) => void;
 }
 
+//Subscription Page Props
+
+export interface SubscriptionPageProps {
+  setNavState: (state: any) => void;
+}
 
 export interface SubscriptionDetail {
   id: number;
@@ -127,3 +124,6 @@ export interface UserStatProps {
   color: string;
   key: number;
 }
+
+
+
