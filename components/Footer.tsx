@@ -19,9 +19,16 @@ function Footer() {
           <Link href="">Help</Link>
         </div>
         <div className="text-white flex gap-8">
+          <Link href="/">
+            <FaFacebookSquare className="w-6 h-6" />
+          </Link>
           <FaFacebookSquare className="w-6 h-6" />
-          <FaInstagramSquare className="w-6 h-6" />
-          <FaSquareXTwitter className="w-6 h-6" />
+          <Link href="https://www.instagram.com/munii_finance/?hl=en">
+            <FaInstagramSquare className="w-6 h-6" />
+          </Link>
+          <Link href="https://x.com/MuniiFinance">
+            <FaSquareXTwitter className="w-6 h-6" />
+          </Link>
         </div>
       </div>
       <div className="border-2 w-full border-white mb-4" />

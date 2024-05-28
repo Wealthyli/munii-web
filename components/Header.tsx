@@ -55,10 +55,14 @@ function Header() {
         </Link>
         <div className="md:flex items-center gap-[1.5rem] hidden ">
           <button className="p-2 bg-black rounded-[50%]">
-            <RiInstagramLine className="text-primary w-[19px] h-[16px]" />
+            <Link href="https://www.instagram.com/munii_finance/?hl=en">
+              <RiInstagramLine className="text-primary w-[19px] h-[16px]" />
+            </Link>
           </button>
           <button className="p-2 bg-black rounded-[50%]">
-            <FaXTwitter className="text-primary w-[19px] h-[16px]" />
+            <Link href="https://x.com/MuniiFinance">
+              <FaXTwitter className="text-primary w-[19px] h-[16px]" />
+            </Link>
           </button>
           <button
             onClick={openModal}
