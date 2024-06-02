@@ -111,19 +111,11 @@ export interface SubscriptionDetail {
 }
 
 
-export interface Stat {
-  title: string;
-  value: string;
-  percentage: string;
-  comparedTo: string;
-  color: string;
-}
-
 export interface UserStatProps {
   title: string;
   value: string;
   percentage: string;
   comparedTo: string;
-  color: string;
   key: number;
 }
+
