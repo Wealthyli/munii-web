@@ -73,12 +73,14 @@ export interface NotificationItemProps {
   timestamp: string
   setView: (state: any) => void;
   setCurrentChat: (state: any) => void;
+  opened:Boolean
 }
 export interface NotificationDataProps {
   title: string
   tag: string
   content: string
   timestamp: string
+  opened:Boolean
 }
 export interface ChatBoxProps {
   title: string
@@ -124,4 +126,19 @@ export interface UserStatProps {
   comparedTo: string;
   color: string;
   key: number;
+}
+
+
+//Auth Props
+
+export interface User {
+  name: string;
+  email: string;
+}
+
+export interface AuthContextProps {
+  user: User | null;
+  loading: boolean;
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => void;
 }

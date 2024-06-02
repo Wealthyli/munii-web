@@ -66,7 +66,7 @@ const NotificationList: React.FC<NotificationListProps> = ({
           </InputRightElement>
         </InputGroup>
       </Box>
-      <VStack w="full" maxHeight="80vh" overflowY="scroll">
+      <VStack spacing={0} w="full" maxHeight="80vh" overflowY="scroll">
         {/* Mapping the Notification Item Component */}
         {notificationData.map((item, i) => {
           return (
@@ -78,6 +78,7 @@ const NotificationList: React.FC<NotificationListProps> = ({
               timestamp={item.timestamp}
               setCurrentChat={setCurrentChat}
               setView={setView}
+              opened={item.opened}
             />
           );
         })}

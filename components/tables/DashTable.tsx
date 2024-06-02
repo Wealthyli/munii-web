@@ -1,7 +1,6 @@
 import { userTableData } from "@/data";
 import {
   Badge,
-  Box,
   CircularProgress,
   CircularProgressLabel,
   HStack,
@@ -225,42 +224,50 @@ const DashTable = () => {
               </Tr>
             </Thead>
             <Tbody>
-              {userTableData.map((item, i) => {
-                return (
-                  <Tr key={i}>
-                    <Td pl="0">{item.name}</Td>
-                    <Td>{item.email}</Td>
-                    <Td>{item.phone}</Td>
-                    <Td>
-                      <CircularProgress value={item.budget} color="black">
-                        <CircularProgressLabel>
-                          {item.budget}%
-                        </CircularProgressLabel>
-                      </CircularProgress>
-                    </Td>
-                    <Td>
-                      <Badge
-                        p="5px"
-                        bg={item.status === "Inactive" ? "red" : "#00C608"}
-                        color="white"
-                      >
-                        {item.status}
-                      </Badge>
-                    </Td>
-                    <Td>
-                      {" "}
-                      <Badge
-                        p="5px"
-                        bg={item.status === "Inactive" ? "#00C608" : "#EBAA03"}
-                        color="white"
-                        cursor="pointer"
-                      >
-                        {item.status === "Inactive" ? "Unsuspend" : "Suspend"}
-                      </Badge>
-                    </Td>
-                  </Tr>
-                );
-              })}
+              {userTableData
+                .filter((item) =>
+                  activeTab === "all"
+                    ? item
+                    : item.status.toLowerCase() === activeTab.toLowerCase()
+                )
+                .map((item, i) => {
+                  return (
+                    <Tr key={i}>
+                      <Td pl="0">{item.name}</Td>
+                      <Td>{item.email}</Td>
+                      <Td>{item.phone}</Td>
+                      <Td>
+                        <CircularProgress value={item.budget} color="black">
+                          <CircularProgressLabel>
+                            {item.budget}%
+                          </CircularProgressLabel>
+                        </CircularProgress>
+                      </Td>
+                      <Td>
+                        <Badge
+                          p="5px"
+                          bg={item.status === "Inactive" ? "red" : "#00C608"}
+                          color="white"
+                        >
+                          {item.status}
+                        </Badge>
+                      </Td>
+                      <Td>
+                        {" "}
+                        <Badge
+                          p="5px"
+                          bg={
+                            item.status === "Inactive" ? "#00C608" : "#EBAA03"
+                          }
+                          color="white"
+                          cursor="pointer"
+                        >
+                          {item.status === "Inactive" ? "Unsuspend" : "Suspend"}
+                        </Badge>
+                      </Td>
+                    </Tr>
+                  );
+                })}
             </Tbody>
           </Table>
         </TableContainer>

@@ -10,9 +10,15 @@ const NotificationItem: React.FC<NotificationItemProps> = ({
   timestamp,
   setView,
   setCurrentChat,
+  opened,
 }) => {
   return (
-    <HStack w="full" borderBottom="1px solid rgba(85, 85, 85, 0.2)" p="20px">
+    <HStack
+      w="full"
+      bg={opened ? "white" : "transperant"}
+      borderBottom="1px solid rgba(85, 85, 85, 0.2)"
+      p="20px"
+    >
       <HStack pr="10px">
         <BsThreeDotsVertical />
         <Checkbox
