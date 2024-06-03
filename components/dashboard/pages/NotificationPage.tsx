@@ -1,5 +1,6 @@
 import { ChatBox, NotificationList } from "@/components/notification";
 import { notificationData } from "@/data";
+
 import { NotificationPageProps } from "@/types";
 import { HStack } from "@chakra-ui/react";
 import React, { useState } from "react";

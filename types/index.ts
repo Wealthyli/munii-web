@@ -1,24 +1,24 @@
 import { IconType } from "react-icons"
-import { notificationData } from '../data/index';
+// import { notificationData } from '../data/index';
 
 
 export interface CardProp {
-  title: string
-  text: string
+  title: string;
+  text: string;
 }
 
 export interface TestimonialCardProp {
-  image: any
-  text: string
-  name: string
+  image: any;
+  text: string;
+  name: string;
 }
 
-// TopBar Props 
+// TopBar Props
 export interface TopBarProps {
   setNavState: (state: any) => void;
 }
 
-// Sidebar props 
+// Sidebar props
 export interface MenuItem {
   key: string;
   icon?: IconType;
@@ -32,8 +32,7 @@ export interface SideBarProps {
   onItemClick: (key: string) => void;
 }
 
-
-// Dashboard Layout 
+// Dashboard Layout
 export interface MenuLayoutItem {
   key: string;
   content: React.ReactNode;
@@ -45,7 +44,6 @@ export interface DashboardLayoutProps {
   navState: Boolean;
   setNavState: (state: any) => void;
 }
-
 
 // Dashboard Page props
 
@@ -75,12 +73,14 @@ export interface NotificationItemProps {
   timestamp: string
   setView: (state: any) => void;
   setCurrentChat: (state: any) => void;
+  opened: Boolean
 }
 export interface NotificationDataProps {
   title: string
   tag: string
   content: string
   timestamp: string
+  opened: Boolean
 }
 export interface ChatBoxProps {
   title: string
@@ -119,3 +119,17 @@ export interface UserStatProps {
   key: number;
 }
 
+
+//Auth Props
+
+export interface User {
+  name: string;
+  email: string;
+}
+
+export interface AuthContextProps {
+  user: User | null;
+  loading: boolean;
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => void;
+}
