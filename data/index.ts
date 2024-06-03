@@ -174,121 +174,42 @@ export const notificationData = [
     title: 'Recent Update',
     tag: 'All Contact',
     content: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    timestamp: '01:35PM'
+    timestamp: '01:35PM',
+    opened: false
   },
   {
     title: 'Sign In Update',
     tag: 'All Users',
     content: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    timestamp: '02:35PM'
+    timestamp: '02:35PM',
+    opened: true
   },
   {
     title: 'Recent Update',
     tag: 'All Staffs',
     content: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    timestamp: '04:35PM'
+    timestamp: '04:35PM',
+    opened: false
   },
   {
     title: 'Recent Update',
     tag: 'All Admins',
     content: "Norem ipsum dolor sit amet, consectetur adipiscing elit. ",
-    timestamp: '06:35PM'
+    timestamp: '06:35PM',
+    opened: false
   },
   {
     title: 'Recent Update',
     tag: 'All Contact',
     content: "Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    timestamp: '08:35PM'
+    timestamp: '08:35PM',
+    opened: false
   },
   {
     title: 'Recent Update',
     tag: 'All Contact',
     content: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    timestamp: '09:35PM'
-  },
-]
-
-
-export const stat = [
-  {
-    title: 'Total Subscriptions',
-    value: '10,540',
-    percentage: '+56%',
-    comparedTo: 'Compared to (4,560 last month)',
-  },
-  {
-    title: 'Active Subscriptions',
-    value: '10,540',
-    percentage: '-56%',
-    comparedTo: 'Compared to (4,560 last month)',
-  },
-  {
-    title: 'Churn Rate',
-    value: '5.6%',
-    percentage: '+56%',
-    comparedTo: 'Compared to (4,560 last month)',
-  },
-  {
-    title: 'Net Revenue',
-    value: 'N33,000',
-    percentage: '+56%',
-    comparedTo: 'Compared to (4,560 last month)',
-  },
-]
-
-export const UserSubscriptionDetail = [
-  {
-    id: 1105,
-    date: 'April 5, 2024',
-    status: 'Active',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png',
-    customer: 'John Doe',
-    plan: 'Basic',
-    revenue: 'N10,000',
-  },
-  {
-    id: 1105,
-    date: 'April 5, 2024',
-    status: 'Cancelled',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png',
-    customer: 'John Doe',
-    plan: 'Premium',
-    revenue: 'N10,000',
-  },
-  {
-    id: 1106,
-    date: 'April 5, 2024',
-    status: 'Active',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png',
-    customer: 'John Doe',
-    plan: 'Basic',
-    revenue: 'N10,000',
-  },
-  {
-    id: 1107,
-    date: 'April 5, 2024',
-    status: 'Active',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png',
-    customer: 'John Doe',
-    plan: 'Premium',
-    revenue: 'N10,000',
-  },
-  {
-    id: 1108,
-    date: 'April 5, 2024',
-    status: 'Active',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png',
-    customer: 'John Doe',
-    plan: 'Basic',
-    revenue: 'N10,000',
-  },
-  {
-    id: 1109,
-    date: 'April 5, 2024',
-    status: 'Cancelled',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png',
-    customer: 'John Doe',
-    plan: 'Premium',
-    revenue: 'N10,000',
+    timestamp: '09:35PM',
+    opened: true
   },
 ]
