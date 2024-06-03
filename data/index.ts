@@ -213,3 +213,96 @@ export const notificationData = [
     opened: true
   },
 ]
+
+export const UserSubscriptionDetail = [
+  {
+    id: 1,
+    date: '2022-01-01',
+    status: 'Active',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'John Doe',
+    plan: 'Basic',
+    revenue: '$10',
+  },
+  {
+    id: 2,
+    date: '2022-01-01',
+    status: 'Active',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'John Doe',
+    plan: 'Basic',
+    revenue: '$10',
+  },
+  {
+    id: 3,
+    date: '2022-01-01',
+    status: 'Active',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'John Doe',
+    plan: 'Basic',
+    revenue: '$10',
+  },
+  {
+    id: 5,
+    date: '2022-01-01',
+    status: 'Active',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'John Doe',
+    plan: 'Basic',
+    revenue: '$10',
+  },
+  {
+    id: 6,
+    date: '2022-02-01',
+    status: 'Cancelled',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'Jane Doe',
+    plan: 'Premium',
+    revenue: '$20',
+  },
+  {
+    id: 7,
+    date: '2022-03-01',
+    status: 'Active',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'Alice',
+    plan: 'Basic',
+    revenue: '$10',
+  },
+  {
+    id: 8,
+    date: '2022-04-01',
+    status: 'Cancelled',
+    avatar: 'https://i0.wp.com/wdc.ng/wp-content/uploads/2024/01/Fullstack-scaled.jpg?w=2560&ssl=1',
+    customer: 'Bob',
+    plan: 'Premium',
+    revenue: '$20',
+  },
+];
+
+export const statData = [
+  {
+    title: "Total Subscriptions",
+    value: "2,400",
+    percentage: "24%",
+    comparedTo: "4,560 last month",
+  },
+  {
+    title: "Active Subscriptions",
+    value: "1,398",
+    percentage: "13.98%",
+    comparedTo: "4,560 last month",
+  },
+  {
+    title: "Churn Rate",
+    value: "98%",
+    percentage: "-98%",
+    comparedTo: "4,560 last month",
+  },
+  {
+    title: "Net Revenue",
+    value: "N3,908",
+    percentage: "39.08%",
+    comparedTo: "4,560 last month",
+  },
+];

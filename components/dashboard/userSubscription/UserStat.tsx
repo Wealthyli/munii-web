@@ -14,7 +14,7 @@ const UserStat: React.FC<UserStatProps> = ({ title, value, percentage, comparedT
           <h1 className='text-[24px] font-semibold'>{value} </h1>
           <p className={`${isNegative ? "text-[#CC3333]" : "text-[#32A50A]"} text-[16px]`}>{percentage}</p>
           <div>
-            <Image src={isNegative ? '/images/icons/DecreaseIcon.svg' : '/images/icons/IncreaseIcon.svg'} alt='icon' width={12} height={12} />
+            <Image src={isNegative ? '/images/icons/DecreaseIcon.svg' : '/images/icons/IncreaseIcon.svg'} alt='icon' width={15} height={15} />
           </div>
         </div>
         <p className='text-grey/01 text-[16px]'>Compared to ({comparedTo})</p>

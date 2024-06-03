@@ -100,12 +100,13 @@ const UserSubscriptionDetails: React.FC = () => {
                             (selected === 'Active Subscribers' && detail.status === 'Active') ||
                             (selected === 'Cancelled Subscribers' && detail.status === 'Cancelled')
                         ).map((details) => (
-                            <tr key={details.id} className="border-t border-dark-gray">                                <td>{details.id}</td>
+                            <tr key={details.id} className="border-t border-dark-gray">
+                                <td>{details.id}</td>
                                 <td>{details.date}</td>
                                 <td><span className={`${details.status === "Active" ? "bg-[#00C608]" : "bg-[#CC3333]"} text-white px-[8px] py-[4px]`}>{details.status}</span></td>
                                 <td >
                                     <div className='flex items-center gap-[6px]'>
-                                        <img src={details.avatar} alt="avatar" className='rounded-full w-6 h-6' /> <span>{details.customer}</span>
+                                        <img src={details.avatar} alt="avatar" className='rounded-full w-8 h-8' /> <span>{details.customer}</span>
                                     </div>
                                 </td>
                                 <td>{details.plan}</td>

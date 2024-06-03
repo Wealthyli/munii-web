@@ -116,7 +116,6 @@ export interface UserStatProps {
   value: string;
   percentage: string;
   comparedTo: string;
-  key: number;
 }
 
 
