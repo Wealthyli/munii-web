@@ -55,10 +55,8 @@ th{
 
 th, td {
   text-align: left;
-  margin-bottom: 66px;
-  padding: 0.5rem;
-  padding-inline: 0.5rem;
-  padding-left: 21px;
+  padding: 1.5rem;
+  white-space: nowrap;
 }
 
 p{

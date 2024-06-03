@@ -4,9 +4,9 @@ import { Select } from '@chakra-ui/react'
 import { SubscriptionPageProps } from "@/types";
 
 
-const SubscriptionPage: React.FC<SubscriptionPageProps> = ({ setNavState }) => {
+const SubscriptionPage: React.FC<SubscriptionPageProps> = () => {
   return (
-    <div className=" flex flex-col justify-center items-start gap-8 w-full overflow-hidden p-[18.03px]">
+    <div className=" flex flex-col justify-center items-center gap-8 w-full p-[18.03px]">
       <div className="flex items-start justify-between w-full">
         <h2 className="text-[24px] font-semibold  text-lgrey/01">Subscription Management</h2>
         <div className="flex gap-4">

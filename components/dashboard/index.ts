@@ -8,8 +8,6 @@ import UserSubscriptionDetails from "./userSubscription/UserSubscriptionDetails"
 import UserSubscriptionStats from "./userSubscription/UserSubscriptionStats";
 import UserubscriptionGraph from "./userSubscription/UserSubscriptionGraph";
 import ButtonComponent from "./ButtonComponent";
-import UserSubscriptionLineGraph from './userSubscription/UserSubscriptionLineGraph'
-import UserSubscriptionPieChart from './userSubscription/UserSubscriptionPieChart'
 import IncreaseIcon from "@/public/images/icons/IncreaseIcon.svg";
 import DecreaseIcon from "@/public/images/icons/DecreaseIcon.svg";
 
@@ -26,8 +24,6 @@ export {
   UserSubscriptionStats,
   UserubscriptionGraph,
   ButtonComponent,
-  UserSubscriptionLineGraph,
-  UserSubscriptionPieChart,
   IncreaseIcon,
   DecreaseIcon
 }

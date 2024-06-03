@@ -73,14 +73,14 @@ export interface NotificationItemProps {
   timestamp: string
   setView: (state: any) => void;
   setCurrentChat: (state: any) => void;
-  opened:Boolean
+  opened: Boolean
 }
 export interface NotificationDataProps {
   title: string
   tag: string
   content: string
   timestamp: string
-  opened:Boolean
+  opened: Boolean
 }
 export interface ChatBoxProps {
   title: string
@@ -111,21 +111,11 @@ export interface SubscriptionDetail {
 }
 
 
-export interface Stat {
-  title: string;
-  value: string;
-  percentage: string;
-  comparedTo: string;
-  color: string;
-}
-
 export interface UserStatProps {
   title: string;
   value: string;
   percentage: string;
   comparedTo: string;
-  color: string;
-  key: number;
 }
 
 
