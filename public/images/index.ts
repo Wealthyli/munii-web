@@ -1,7 +1,7 @@
 import account from './Account.png';
 import apphome from './app-home.png';
 import bank from './bank.png';
-import bannerImage from './BannerImage.png';
+import bannerImage from './Banner Image.png';
 import budget from './Budget.png';
 import chat from './Chatt.png'
 import logo from './logo.png';
@@ -13,8 +13,8 @@ import rectangle from './Rectangle.png'
 import googlePlay from './google-play.png'
 import cardIcon from './card-icon.png'
 import Analysis from './Analysis.png'
-import track from './Track-pic.png'
-import budg from './Analysis_.png'
+import track from './Track pic.png';
+import budg from './Analysis _.png'
 import doe from './doe.png'
 import avatar from './avatar.png'
 import logo_green from './logo-green.svg'

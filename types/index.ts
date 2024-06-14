@@ -13,6 +13,11 @@ export interface TestimonialCardProp {
   name: string;
 }
 
+export interface ButtonProp {
+  btnName: string;
+  onclick: (key: any) => void;
+}
+
 // TopBar Props
 export interface TopBarProps {
   setNavState: (state: any) => void;

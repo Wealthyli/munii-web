@@ -48,25 +48,25 @@ function Header() {
   };
 
   return (
-    <header className="">
+    <header className="bg-black">
       <nav className="flex items-center justify-between px-4 lg:px-[5rem] md:py-[1.5rem]">
         <Link className="" href="/">
           <Image src={logo} alt="logo" />
         </Link>
         <div className="md:flex items-center gap-[1.5rem] hidden ">
-          <button className="p-2 bg-black rounded-[50%]">
+          <button className="p-3 bg-white rounded-[50%]">
             <Link href="https://www.instagram.com/munii_finance/?hl=en">
-              <RiInstagramLine className="text-primary w-[19px] h-[16px]" />
+              <RiInstagramLine className="text-black w-[24px] h-[24px]" />
             </Link>
           </button>
-          <button className="p-2 bg-black rounded-[50%]">
+          <button className="p-3 bg-white rounded-[50%]">
             <Link href="https://x.com/MuniiFinance">
-              <FaXTwitter className="text-primary w-[19px] h-[16px]" />
+              <FaXTwitter className="text-black w-[24px] h-[24px]" />
             </Link>
           </button>
           <button
             onClick={openModal}
-            className="border-2 border-black py-[18px] px-[32px] rounded-[20px] font-[600] text-lg"
+            className="border-2 border-primary py-[10px] px-[32px] rounded-full font-[600] text-lg text-white"
           >
             Use Web App
           </button>
