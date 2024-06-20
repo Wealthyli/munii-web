@@ -4,7 +4,7 @@ import bank from './bank.png';
 import bannerImage from './Banner Image.png';
 import budget from './Budget.png';
 import chat from './Chatt.png'
-import logo from './logo.png';
+import logo from './logo.svg';
 import moneyStack from './money-stack.png';
 import newNotification from './New-Notification.png';
 import Notification from './Notification.png';
