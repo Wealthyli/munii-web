@@ -10,8 +10,8 @@ function CTA() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const openModal = () => {
-      setIsModalOpen(prev => !prev)
-    }
+    setIsModalOpen(prev => !prev)
+  }
 
 
   const closeModal = () => {

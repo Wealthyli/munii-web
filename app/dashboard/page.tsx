@@ -9,6 +9,7 @@ import {
 import { DashboardPage } from "@/components/dashboard/index";
 import { BiUser } from "react-icons/bi";
 import { IoNotificationsOutline, IoWallet } from "react-icons/io5";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 const page = () => {
   const [navState, setNavState] = useState(false);
@@ -32,11 +33,13 @@ const page = () => {
   ];
 
   return (
-    <DashboardLayout
-      navState={navState}
-      setNavState={setNavState}
-      menuItems={menuItems}
-    />
+    <ProtectedRoute>
+      <DashboardLayout
+        navState={navState}
+        setNavState={setNavState}
+        menuItems={menuItems}
+      />
+    </ProtectedRoute>
   );
 };
 
