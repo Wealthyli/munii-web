@@ -3,13 +3,12 @@
 import { useState, useEffect } from "react";
 import { logo } from "@/public/images";
 import Image from "next/image";
-import { RiInstagramLine } from "react-icons/ri";
-import { FaXTwitter } from "react-icons/fa6";
 import { TfiClose } from "react-icons/tfi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import ComingSoonModal from "./ComingSoonModal";
+import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -48,25 +47,39 @@ function Header() {
   };
 
   return (
-    <header className="">
-      <nav className="flex items-center justify-between px-4 lg:px-[5rem] md:py-[1.5rem]">
+    <header className="bg-black">
+      <nav className="flex items-center justify-between px-4 lg:px-[5rem] md:py-[1.5rem] ">
         <Link className="" href="/">
           <Image src={logo} alt="logo" />
         </Link>
+        <ul className="md:flex items-center justify-between text-white text-lg gap-6 hidden">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About Us</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
+        </ul>
         <div className="md:flex items-center gap-[1.5rem] hidden ">
-          <button className="p-2 bg-black rounded-[50%]">
+          <button className="p-2 bg-white rounded-[50%]">
             <Link href="https://www.instagram.com/munii_finance/?hl=en">
-              <RiInstagramLine className="text-primary w-[19px] h-[16px]" />
+              <AiOutlineTwitter className="text-black w-[30px] h-[30px]" />
             </Link>
           </button>
-          <button className="p-2 bg-black rounded-[50%]">
+          <button className="p-2 bg-white rounded-[50%]">
             <Link href="https://x.com/MuniiFinance">
-              <FaXTwitter className="text-primary w-[19px] h-[16px]" />
+              <AiFillInstagram className="text-black w-[30px] h-[30px]" />
             </Link>
           </button>
           <button
             onClick={openModal}
-            className="border-2 border-black py-[18px] px-[32px] rounded-[20px] font-[600] text-lg"
+            className="border-2 border-primary text-primary py-[10px] px-[32px] rounded-[20px] font-[600] text-lg"
           >
             Use Web App
           </button>
@@ -91,7 +104,7 @@ function Header() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 100, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden fixed top-20 right-0 w-64 h-full bg-white z-50 mobile-menu"
+              className="md:hidden fixed top-[3.4rem] right-0 w-64 h-full bg-white z-50 mobile-menu"
             >
               <div className="text-center flex flex-col items-center justify-center py-8">
                 <Link
