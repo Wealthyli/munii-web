@@ -1,61 +1,44 @@
 import React from "react";
-import {UserSubscriptionStats, UserubscriptionGraph, UserSubscriptionDetails} from "@/components/dashboard/index";
-import DropDownMenu from "../DropDownMenu";
+import { UserSubscriptionStats, UserubscriptionGraph, UserSubscriptionDetails } from "@/components/dashboard/index";
+import { Select } from '@chakra-ui/react'
 import { SubscriptionPageProps } from "@/types";
-
-
-const menuData = [
-  {
-    text: 'Download',
-    onClick: () => console.log('Download clicked'),
-  },
-  {
-    text: 'Create a Copy',
-    onClick: () => console.log('Create a Copy clicked'),
-  },
-  {
-    text: 'Mark as Draft',
-    onClick: () => console.log('Mark as Draft clicked'),
-  },
-  {
-    text: 'Delete',
-    onClick: () => console.log('Delete clicked'),
-  },
-  {
-    text: 'Attend a Workshop',
-    onClick: () => console.log('Attend a Workshop clicked'),
-  },
-];
-
-const Monthly = [
-  {
-    text: 'Monthly',
-    onClick: () => console.log('Monthly clicked'),
-  },
-  {
-    text: 'Yearly',
-    onClick: () => console.log('Yearly clicked'),
-  },
-];
 
 
 const SubscriptionPage: React.FC<SubscriptionPageProps> = ({ setNavState }) => {
   return (
-    <div className=" flex flex-col justify-center items-start gap-8 w-full overflow-hidden">
+    <div className=" flex flex-col justify-center items-start gap-8 w-full overflow-hidden p-[18.03px]">
       <div className="flex items-start justify-between w-full">
         <h2 className="text-[24px] font-semibold  text-lgrey/01">Subscription Management</h2>
         <div className="flex gap-4">
-        <div>
-          <DropDownMenu menuItems={menuData} buttonText="All Plans" />
-        </div>
-        <div>
-          <DropDownMenu menuItems={Monthly} buttonText="Monthly" />
-        </div>
+          <div>
+            <Select
+              maxW="130px"
+              h="35px"
+              bg="rgba(85, 85, 85, 0.1)"
+              placeholder="All Plans "
+              focusBorderColor="black"
+            >
+              <option value='option1'>All Plans </option>
+
+            </Select>
+          </div>
+          <div>
+            <Select
+              maxW="130px"
+              h="35px"
+              bg="rgba(85, 85, 85, 0.1)"
+              placeholder="Monthly"
+              focusBorderColor="black"
+            >
+              <option value='option1'>Monthly </option>
+
+            </Select>
+          </div>
         </div>
       </div>
       <UserSubscriptionStats />
       <UserubscriptionGraph />
-      <UserSubscriptionDetails/>
+      <UserSubscriptionDetails />
     </div>
   );
 };

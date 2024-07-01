@@ -3,7 +3,7 @@ import { DecreaseIcon,IncreaseIcon } from './index';
 
 interface UserStatProps {
   title: string;
-  value: number;
+  value: string;
   percentage: string;
   comparedTo: string;
     color: string;
