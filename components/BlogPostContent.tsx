@@ -3,10 +3,11 @@ import React from 'react';
 import { clock, view, facebook, pinterest, twitter, linkdin } from "@/public/images"
 import TextInput from './ui/ReUableInput/TextInput';
 import CustomButton from './ui/custom-buttton/CustomButton';
-import { ProfileCard, SeriesBlogCard, SeriesCard } from './cards';
+import { ProfileCard, SeriesBlogCard } from './cards';
 import { topReadPost } from '@/data';
 import { BlogPostProp } from '@/types';
 import { blogPost } from '@/data';
+import CommentSection from './CommentSection';
 
 
 
@@ -70,6 +71,7 @@ const BlogPostContent = ({
                                     </CustomButton>
                                 </div>
                                 <ProfileCard />
+                                <CommentSection />
                             </div>
                             <div className='flex flex-col gap-4'>
                                 <p className='text-lg'>Subscribe to our newsletter and receive a selection of cool articles every weeks
@@ -92,10 +94,6 @@ const BlogPostContent = ({
                         </div>
                     </div>
                 </>) : ""}
-            {/* <div>
-
-                </div> */}
-            {/* </div> */}
         </section>
     );
 }

@@ -17,6 +17,7 @@ import BlogPost from "./BlogPost";
 import NewsLetter from "./NewsLetter";
 import BlogPostContent from "./BlogPostContent";
 import TopReadBlog from "./TopReadBlog";
+import CommentSection from "./CommentSection";
 
 export {
   CTA,
@@ -38,4 +39,5 @@ export {
   NewsLetter,
   BlogPostContent,
   TopReadBlog,
+  CommentSection,
 }
