@@ -2,9 +2,8 @@ import React from 'react';
 import {
     Header,
     Footer,
-    Blog,
-    BlogPost,
     BlogPostContent,
+    TopReadBlog,
 } from "@/components";
 
 const Page = () => {
@@ -13,7 +12,7 @@ const Page = () => {
             <Header />
             <main className="">
                 <BlogPostContent />
-                {/* <BlogPost /> */}
+                <TopReadBlog />
             </main>
             <Footer />
         </>

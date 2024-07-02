@@ -114,41 +114,39 @@ const HowCanWeHelp = () => {
                         </div>
                     </div>
                 </article>
-                <div>
-                    <form className="flex flex-col gap-4 ">
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <TextInput
-                                inputLabel="First Name"
-                                placeholder="First Name"
-                                overrideStyles="w-full"
-                            />
-                            <TextInput
-                                inputLabel="Last Name"
-                                placeholder="Last Name"
-                                overrideStyles="w-full"
-                            />
-                        </div>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <TextInput
-                                inputLabel="Email"
-                                placeholder="Email"
-                                overrideStyles="w-full"
-                            />
-                            <TextInput
-                                inputLabel="phone Number"
-                                placeholder="phone Number"
-                            />
-                        </div>
-                        <div className="flex flex-col gap-4">
-                            <textarea name="" id="" placeholder="send message" className="border border-[#c9c4c4cc] sm:max-w-[636px] h-[245px] rounded-3xl p-6 w-full"></textarea>
-                            <CustomButton
-                                overrideStyle="bg-black text-primary text-lg font-semibold w-full mt-4 rounded-2xl p-4"
-                            >
-                                Submit
-                            </CustomButton>                            <p>By sending message, you agree to our <Link href="/term"> Terms and Conditions</Link> and <Link href="/policy">Privacy Policy</Link></p>
-                        </div>
-                    </form>
-                </div>
+                <form className="flex flex-col gap-4 items-center justify-center max-w-[636px]">
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <TextInput
+                            inputLabel="First Name"
+                            placeholder="First Name"
+                            overrideStyles="w-full"
+                        />
+                        <TextInput
+                            inputLabel="Last Name"
+                            placeholder="Last Name"
+                            overrideStyles="w-full"
+                        />
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <TextInput
+                            inputLabel="Email"
+                            placeholder="Email"
+                            overrideStyles="w-full"
+                        />
+                        <TextInput
+                            inputLabel="phone Number"
+                            placeholder="phone Number"
+                        />
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <textarea name="" id="" placeholder="send message" className="border border-[#c9c4c4cc] sm:max-w-[636px] h-[245px] rounded-3xl p-6 w-full"></textarea>
+                        <CustomButton
+                            overrideStyle="bg-black text-primary text-lg font-semibold w-full mt-4 rounded-2xl p-4"
+                        >
+                            Submit
+                        </CustomButton>                            <p>By sending message, you agree to our <Link href="/term"> Terms and Conditions</Link> and <Link href="/policy">Privacy Policy</Link></p>
+                    </div>
+                </form>
             </section>
             <CTA />
         </motion.div>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const BlogPostCard = ({
+    id,
     title,
     category,
     coverImage,
@@ -26,13 +27,13 @@ const BlogPostCard = ({
                 <div className='flex gap-2 text-sm'>
                     <p>{date}</p>
                     <Image src={"/images/shareIcon.svg"} width={16} height={16} alt='blog post' className='rounded-xl' />
-                    <p>{shareCount}k shares</p>
+                    <p>{shareCount} shares</p>
                 </div>
             </div>
             <p>
                 {coverText}
             </p>
-            <Link href="/" className='self-end border-b border-b-black'>View Post</Link>
+            <Link href={`/blog/${id}`} className='self-end border-b border-b-black'>View Post</Link>
         </article>
     );
 }

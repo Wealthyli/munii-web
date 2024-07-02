@@ -31,6 +31,7 @@ import twitter from "./mdi_twitter.svg"
 import facebook from "./ic_baseline-facebook.svg"
 import pinterest from "./mdi_pinterest.svg"
 import view from "./views.svg"
+import linkdin from "./linkdin.svg"
 
 export {
   account,
@@ -66,4 +67,5 @@ export {
   twitter,
   pinterest,
   facebook,
+  linkdin
 }

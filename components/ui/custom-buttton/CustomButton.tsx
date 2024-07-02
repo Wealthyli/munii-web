@@ -8,7 +8,7 @@ const colors = {
 };
 const CustomButton = ({
   color,
-  disabled,
+  disabled = false,
   routeTo,
   action,
   children,
