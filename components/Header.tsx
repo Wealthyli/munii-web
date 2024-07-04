@@ -87,12 +87,12 @@ function Header() {
         <div className="flex md:hidden">
           {isMobileMenuOpen ? (
             <TfiClose
-              className="text-2xl cursor-pointer"
+              className="text-2xl cursor-pointer text-white"
               onClick={toggleMobileMenu}
             />
           ) : (
             <HiOutlineBars3BottomRight
-              className="text-3xl cursor-pointer"
+              className="text-3xl cursor-pointer text-white"
               onClick={toggleMobileMenu}
             />
           )}
@@ -104,33 +104,33 @@ function Header() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 100, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden fixed top-[3.4rem] right-0 w-64 h-full bg-white z-50 mobile-menu"
+              className="md:hidden fixed top-[3.4rem] right-0 w-64 h-full bg-black z-50 mobile-menu"
             >
               <div className="text-center flex flex-col items-center justify-center py-8">
                 <Link
                   href="/about"
-                  className="block mb-4 mt-2 hover:text-green-500"
+                  className="block mb-4 mt-2 hover:text-white text-primary"
                   onClick={closeMobileMenu}
                 >
                   About
                 </Link>
                 <Link
-                  href="/#services"
-                  className="block mb-4 hover:text-green-500"
+                  href="/contact"
+                  className="block mb-4 hover:text-white text-primary"
                   onClick={closeMobileMenu}
                 >
-                  Services
+                  Contact Us
                 </Link>
                 <Link
-                  href="/support"
-                  className="block mb-4 hover-text-green-500"
+                  href="/blog"
+                  className="block mb-4 hover:text-white text-primary"
                   onClick={closeMobileMenu}
                 >
-                  Support
+                  Blog
                 </Link>
                 <button
                   onClick={openModal}
-                  className="block mx-4 bg-black text-white rounded py-3 px-4 hover-bg-transparent hover-border-green-700 border self-center"
+                  className="block mx-4 bg-black text-white py-3 px-4 border self-center border-primary rounded-[20px]"
                 >
                   Get the App
                 </button>
