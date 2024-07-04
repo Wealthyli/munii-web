@@ -63,3 +63,31 @@ p{
   line-height: 1.5;
 }
 
+/* Textinput */
+.input-brand{
+width: 308px;
+height: 56px;
+border-radius: 20px;
+border: 1px solid #c9c4c4cc;
+padding-inline: 32px;
+padding-block: 23px;
+color: #555555;
+}
+
+.input-brand{
+outline: none;
+}
+
+/* brand-btn */
+.btn-brand{
+  color:primary;
+  background: black;
+  width:210px;
+  height:56px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: 600;
+}
+

@@ -6,6 +6,7 @@ import { CardProp } from "@/types";
 import { cardIcon, Analysis, budg, track } from "@/public/images";
 import { motion } from "framer-motion";
 import ComingSoonModal from "./ComingSoonModal";
+import Button from "./Button";
 
 function Features() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -116,6 +117,7 @@ function Features() {
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
             </motion.p>
+            <Button btnName=" Get Started" onclick={openModal} />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row-reverse justify-between items-center gap-8 lg:gap-0">
@@ -125,7 +127,7 @@ function Features() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           >
             <Image
-              src={budg}
+              src={track}
               alt="analysis of spending"
               className="w-auto lg:w-[548px] h-auto lg:h-[390px]"
             />
@@ -154,6 +156,7 @@ function Features() {
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
             </motion.p>
+            <Button btnName=" Get Started" onclick={openModal} />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
@@ -163,7 +166,7 @@ function Features() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           >
             <Image
-              src={track}
+              src={budg}
               alt="analysis of spending"
               className="w-auto lg:w-[548px] h-auto lg:h-[390px]"
             />
@@ -192,17 +195,10 @@ function Features() {
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
             </motion.p>
+            <Button btnName=" Get Started" onclick={openModal} />
           </div>
         </div>
       </section>
-      <div className="flex items-center justify-center mt-16">
-        <button
-          onClick={openModal}
-          className="text-primary bg-black w-[210px] h-[56px] flex items-center justify-center rounded-[20px] font-semibold"
-        >
-          Get Started
-        </button>
-      </div>
       {isModalOpen && <ComingSoonModal closeModal={closeModal} />}
     </motion.div>
   );

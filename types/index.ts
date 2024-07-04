@@ -1,5 +1,6 @@
 import { IconType } from "react-icons"
-// import { notificationData } from '../data/index';
+import { ReactNode, CSSProperties } from 'react';
+
 
 
 export interface CardProp {
@@ -12,6 +13,22 @@ export interface TestimonialCardProp {
   text: string;
   name: string;
 }
+
+export interface ButtonProp {
+  btnName: string;
+  onclick: (key: any) => void;
+  className: any;
+}
+
+export interface CustomButtonProp {
+  color?: string;
+  disabled: any;
+  routeTo?: string;
+  action: (key: any) => void;
+  children: any;
+  overrideStyle?: any;
+}
+
 
 // TopBar Props
 export interface TopBarProps {
@@ -131,4 +148,59 @@ export interface AuthContextProps {
   loading: boolean;
   login: (email: string, password: string) => Promise<void>;
   logout: () => void;
+}
+
+//About page props
+
+export interface ValueCardProp {
+  icon: any;
+  title: string;
+  description: string;
+}
+
+export interface MemberCardProp {
+  name: string;
+  title: string;
+  image: any;
+}
+
+//input props
+export interface TextInputProp {
+  inputLabel?: string;
+  overrideStyles?: any;
+  placeholder?: string;
+  formType?: string;
+  required?: boolean;
+  children?: ReactNode;
+  [key: string]: any;
+}
+
+export interface BlogPostProp {
+  id: number;
+  // slug: any;
+  title: string;
+  category: string;
+  coverImage: any;
+  coverText: string;
+  authorName: string;
+  authorAvatar: any;
+  date: any;
+  shareCount: number;
+  viewCount: number;
+  readTime: any;
+  blogContent: string;
+  faceBookCount: number;
+  pinterestCount: number;
+  linkDlnCount: number;
+}
+
+export interface SeriesCardProp {
+  blogImage: any;
+  title: string;
+  date: any;
+}
+
+export interface SeriesBlogCardProp {
+  title?: string;
+  data: any;
 }
