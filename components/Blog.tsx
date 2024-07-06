@@ -4,7 +4,7 @@ import { FaSearchLocation } from 'react-icons/fa';
 const Blog = () => {
 
     return (
-        <section className="relative bg-[url('/images/money.png')] bg-cover bg-center h-[85vh] text-white flex flex-col gap-10 items-center justify-center ">
+        <section className="relative bg-[url('/images/money.png')] bg-cover bg-center h-[80vh] text-white flex flex-col gap-10 items-center justify-center ">
             <div className="absolute inset-0 bg-black bg-opacity-60" />
             <div className="relative z-10 flex flex-col gap-4 text-center max-w-[520px]">
                 <h1 className='text-5xl font-semibold'>Blog</h1>

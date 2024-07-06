@@ -1,12 +1,13 @@
 'use client'
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import { MemberCardProp } from '@/types';
 import { teamMembers } from '@/data';
 import Button from './Button';
 
 const MeetOurTeam = () => {
+    const [showAllMember, setShowAllMember] = useState(8)
     const TeamMember = ({ name, title, image }: MemberCardProp) => {
         return (
             <article className='w-[150px] flex flex-col gap-2'>
@@ -26,15 +27,15 @@ const MeetOurTeam = () => {
     }
 
     return (
-        <section className='text-center flex flex-col items-center gap-4 my-8'>
-            <div className='sm:w-[70vw] md:w-[40vw]'>
+        <section className='text-center flex flex-col items-center gap-4 my-8 px-4'>
+            <div className='sm:w-full md:w-[80vw]'>
                 <h1 className='mb-4 font-semibold text-4xl text-black'>Meet Our Dedicated Team</h1>
                 <p className='font-medium text-lg text-grey/02 '>
                     Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                 </p>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  p-4 justify-evenly items-center w-screen justify-items-center'>
-                {teamMembers.map((member, index) => (
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 justify-evenly items-center w-full justify-items-center'>
+                {teamMembers.slice(0, 8).map((member, index) => (
                     <TeamMember key={index} {...member} />
                 ))}
             </div>

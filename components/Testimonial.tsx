@@ -36,7 +36,7 @@ function Testimonial() {
     );
   };
   return (
-    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] w-[100vw] lg:h-[100vh] pt-8 lg:pt-20 ">
+    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] w-full lg:h-[100vh] pt-8 lg:pt-20 ">
       <div className="flex flex-col gap-4 items-center justify-center">
         <motion.h1
           initial={{ opacity: 0 }}

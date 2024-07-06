@@ -21,7 +21,7 @@ const BlogPostContent = ({
         <section>
             {post ? (
                 <>
-                    <div className={`relative bg-[url('/images/money.png')] bg-cover bg-center h-[85vh] text-white flex flex-col gap-10 items-start px-4 lg:px-[5rem] md:py-[1.5rem] justify-center`}
+                    <div className={`relative bg-[url('/images/money.png')] bg-cover bg-center h-[80vh] text-white flex flex-col gap-10 items-start px-4 lg:px-[5rem] md:py-[1.5rem] justify-center`}
                     >
                         <div className="absolute inset-0 bg-black bg-opacity-60" />
                         <div className="relative z-10 flex flex-col gap-4 text-left max-w-[570px]">
@@ -43,10 +43,10 @@ const BlogPostContent = ({
                             </div>
                         </div>
                     </div>
-                    <div className=' p-4 lg:px-[5rem] md:py-[4rem] justify-center'>
-                        <div className='flex md:flex-row flex-col gap-6'>
-                            <div className='flex flex-col gap-6'>
-                                <p className='text-[16px] tracking-wide leading-loose'>
+                    <div className=' p-4 lg:px-[5rem] md:py-[4rem] justify-center '>
+                        <div className='flex md:flex-row flex-col gap-6 w-full'>
+                            <div className='flex flex-col gap-6 w-full md:w-[75%]'>
+                                <p className='text-[16px] tracking-wide leading-loose justify-text'>
                                     {post.blogContent}
                                 </p>
                                 <div className='flex flex-row flex-wrap gap-2'>
@@ -73,7 +73,7 @@ const BlogPostContent = ({
                                 <ProfileCard />
                                 <CommentSection />
                             </div>
-                            <div className='flex flex-col gap-4'>
+                            <div className='flex flex-col w-full md:w-[25%] gap-4'>
                                 <p className='text-lg'>Subscribe to our newsletter and receive a selection of cool articles every weeks
                                 </p>
                                 <TextInput

@@ -144,7 +144,8 @@ const HowCanWeHelp = () => {
                             overrideStyle="bg-black text-primary text-lg font-semibold w-full mt-4 rounded-2xl p-4"
                         >
                             Submit
-                        </CustomButton>                            <p>By sending message, you agree to our <Link href="/term"> Terms and Conditions</Link> and <Link href="/policy">Privacy Policy</Link></p>
+                        </CustomButton>
+                        <p>By sending message, you agree to our <Link href="/term"> Terms and Conditions</Link> and <Link href="/policy">Privacy Policy</Link></p>
                     </div>
                 </form>
             </section>
