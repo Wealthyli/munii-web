@@ -65,7 +65,7 @@ p{
 
 /* Textinput */
 .input-brand{
-width: 308px;
+/* width: 308px; */
 height: 56px;
 border-radius: 20px;
 border: 1px solid #c9c4c4cc;
@@ -82,8 +82,8 @@ outline: none;
 .btn-brand{
   color:primary;
   background: black;
-  width:210px;
-  height:56px;
+  /* width:210px;
+  height:56px; */
   display: flex; 
   align-items: center;
   justify-content: center;
@@ -91,3 +91,6 @@ outline: none;
   font-weight: 600;
 }
 
+textarea:focus{
+  outline: none;
+}

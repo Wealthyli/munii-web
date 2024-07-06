@@ -25,7 +25,7 @@ export interface CustomButtonProp {
   disabled: any;
   routeTo?: string;
   action: (key: any) => void;
-  children: any;
+  children?: any;
   overrideStyle?: any;
 }
 
@@ -203,4 +203,9 @@ export interface SeriesCardProp {
 export interface SeriesBlogCardProp {
   title?: string;
   data: any;
+}
+
+export interface FAQCardProp {
+  questionText: string;
+  answerText: string;
 }

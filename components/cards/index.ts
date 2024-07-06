@@ -4,6 +4,7 @@ import SeriesCard from './SeriesCard';
 import SeriesBlogCard from './SeriesBlogCard';
 import ProfileCard from './ProfileCard';
 import CommentCard from './CommentCard';
+import FAQCard from './FAQCard';
 
 export {
     DashInfo,
@@ -12,4 +13,5 @@ export {
     SeriesBlogCard,
     ProfileCard,
     CommentCard,
+    FAQCard,
 }

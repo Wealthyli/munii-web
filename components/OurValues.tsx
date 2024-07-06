@@ -16,12 +16,12 @@ const OurValues = () => {
         )
     }
     return (
-        <section className='bg-white text-center flex flex-col items-center justify-center gap-10 m-24'>
+        <section className='bg-white text-center flex flex-col items-center justify-center gap-10 my-24'>
             <div className='sm:w-[70vw] md:w-[40vw]'>
                 <h1 className='font-semibold text-black text-4xl mb-4'>Our Values</h1>
                 <p className='font-medium text-lg text-grey/02  '>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             </div>
-            <div className='flex flex-row flex-wrap justify-evenly w-screen'>
+            <div className='flex flex-row flex-wrap justify-evenly w-full'>
                 <ValueCard
                     icon={integrity}
                     title='Integrity'
