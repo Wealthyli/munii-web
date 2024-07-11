@@ -373,7 +373,7 @@ export const blogPost = [
     id: 1,
     title: "Financial Inclusion and Management",
     category: "Savings",
-    coverImage: "/images/money.png",
+    coverImage: "/images/under_construction.png",
     coverText: "Discover the power of smart budgeting with our app. Optimize your spending, reach your goals faster, and enjoy a more fulfilling life.",
     authorName: "Jameela Doe",
     authorAvatar: "/images/Ellipse 2.png",

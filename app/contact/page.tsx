@@ -1,10 +1,6 @@
+import { ContactUs, HowCanWeHelp } from '@/components/contact'
+import { Header, Footer } from '@/components/main'
 import React from 'react'
-import {
-    Header,
-    Footer,
-    ContactUs,
-    HowCanWeHelp
-} from "@/components";
 
 
 const page = () => {

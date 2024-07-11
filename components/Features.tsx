@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CardProp } from "@/types";
 import { cardIcon, Analysis, budg, track } from "@/public/images";
 import { motion } from "framer-motion";
-import ComingSoonModal from "./ComingSoonModal";
+import ComingSoonModal from "./main/ComingSoonModal";
 import Button from "./Button";
 
 function Features() {
@@ -117,7 +117,7 @@ function Features() {
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
             </motion.p>
-            <Button btnName=" Get Started" onclick={openModal} />
+            <custombutton btnName=" Get Started" onclick={openModal} />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row-reverse justify-between items-center gap-8 lg:gap-0">
@@ -156,7 +156,7 @@ function Features() {
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
             </motion.p>
-            <Button btnName=" Get Started" onclick={openModal} />
+            <custombutton btnName=" Get Started" onclick={openModal} />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
@@ -195,7 +195,7 @@ function Features() {
               et velit interdum, ac aliquets.Corem ipsum dolor sit amet,
               consectetur adipiscinipsu
             </motion.p>
-            <Button btnName=" Get Started" onclick={openModal} />
+            <custombutton btnName=" Get Started" onclick={openModal} />
           </div>
         </div>
       </section>

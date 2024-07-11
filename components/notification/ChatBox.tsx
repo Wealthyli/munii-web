@@ -90,7 +90,7 @@ const ChatBox: React.FC<ChatBoxProps> = ({
 
             <GrEmoji fontSize="22px" cursor="pointer" />
           </HStack>
-          <Button
+          <custombutton
             bg="black"
             color="brand.500"
             p="10px 25px"

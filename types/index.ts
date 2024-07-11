@@ -22,7 +22,7 @@ export interface ButtonProp {
 
 export interface CustomButtonProp {
   color?: string;
-  disabled: any;
+  disabled?: boolean | undefined;
   routeTo?: string;
   action: (key: any) => void;
   children?: any;

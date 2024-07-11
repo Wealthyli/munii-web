@@ -1,10 +1,9 @@
+"use client"
+
 import React from 'react';
-import {
-    Header,
-    Footer,
-    BlogPostContent,
-    TopReadBlog,
-} from "@/components";
+import { TopReadBlog, BlogPostContent } from '@/components/blog';
+import { Header, Footer } from '@/components/main';
+
 
 const Page = () => {
     return (

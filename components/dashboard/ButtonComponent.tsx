@@ -11,7 +11,7 @@ export default function ButtonComponent({ onClick, text, count, selected }: Butt
   const [onHover, setOnHover] = useState(false)
 
   return (
-    <button
+    <custombutton
       onClick={onClick}
       onMouseLeave={() => setOnHover(false)}
       onMouseEnter={() => setOnHover(true)}

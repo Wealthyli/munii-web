@@ -27,7 +27,8 @@ const config: Config = {
         "2xl": "1px 5px 40px 8px #6E758812",
         "3xl": "1px 5px 40px 8px rgba(110, 117, 136, 0.07)",
         "buttonShadow": "0px 3px 3px 0px #55555540",
-      }
+        "missionShadow": "0px 4px 4px 0px #00000040",
+      },
     },
   },
   plugins: [],
