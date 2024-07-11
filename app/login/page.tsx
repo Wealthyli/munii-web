@@ -88,7 +88,7 @@ const page = () => {
               />
             </FormControl>
 
-            <Button
+            <custombutton
               my="20px"
               type="submit"
               h="50px"

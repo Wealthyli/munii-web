@@ -5,7 +5,7 @@ import { bannerImage, googlePlay } from "@/public/images";
 import Image from "next/image";
 import { IoLogoApple } from "react-icons/io";
 import { motion } from "framer-motion";
-import ComingSoonModal from "./ComingSoonModal";
+import ComingSoonModal from "./main/ComingSoonModal";
 
 function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -9,7 +9,7 @@ import {
 import { DashboardPage } from "@/components/dashboard/index";
 import { BiUser } from "react-icons/bi";
 import { IoNotificationsOutline, IoWallet } from "react-icons/io5";
-import ProtectedRoute from "@/components/ProtectedRoute";
+import ProtectedRoute from "@/components/main/ProtectedRoute";
 
 const page = () => {
   const [navState, setNavState] = useState(false);

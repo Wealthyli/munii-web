@@ -30,7 +30,6 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
 }
 
 .close {
@@ -79,18 +78,15 @@ outline: none;
 }
 
 /* brand-btn */
-.btn-brand{
-  color:primary;
-  background: black;
-  /* width:210px;
-  height:56px; */
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  font-weight: 600;
-}
+  .btn-brand {
+    @apply px-3 py-[7px] sm:px-6 sm:py-[10px] text-lg md:text-base rounded-2xl cursor-pointer font-medium disabled:cursor-not-allowed;
+  }
+
 
 textarea:focus{
   outline: none;
+}
+
+li.active{
+  color:#A4C528;
 }

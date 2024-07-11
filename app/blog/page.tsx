@@ -1,10 +1,8 @@
+import { Blog, BlogPost } from '@/components/blog'
+import { Header, Footer } from '@/components/main'
 import React from 'react'
-import {
-    Header,
-    Footer,
-    Blog,
-    BlogPost,
-} from "@/components";
+
+
 const page = () => {
     return (
         <>

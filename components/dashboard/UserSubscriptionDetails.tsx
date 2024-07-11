@@ -88,7 +88,7 @@ const UserSubscriptionDetails: React.FC = () => {
             <div className='flex items-start justify-between w-full flex-wrap gap-['>
                 <div className='rounded-3xl border border-dark-gray shadow-2xl text-[14px] text-lgrey/01'>
                     {data.map((item, index) => (
-                        <ButtonComponent
+                        <custombuttonComponent
                             key={index}
                             text={item.text}
                             count={item.count}

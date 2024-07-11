@@ -4,7 +4,7 @@ import React from "react";
 import { TestimonialCardProp } from "@/types";
 import Image from "next/image";
 import { doe } from "@/public/images";
-import CTA from './CTA'
+import CTA from './main/CTA'
 import { motion } from "framer-motion";
 
 

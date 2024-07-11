@@ -1,15 +1,6 @@
 import React from 'react'
-import {
-    Header,
-    Footer,
-    AboutUs,
-    OurValues,
-    OurMission,
-    MeetOurTeam,
-    FrequentAskQuestion,
-    OurCustomerStory
-} from "@/components";
-
+import { Header, Footer } from '@/components/main'
+import { AboutUs, FrequentAskQuestion, MeetOurTeam, OurCustomerStory, OurMission, OurValues } from '@/components/about'
 
 const page = () => {
     return (

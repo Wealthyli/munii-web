@@ -3,6 +3,7 @@
 import { FAQCardProp } from '@/types';
 import React, { useState } from 'react';
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
+import CustomButton from '../CustomButton';
 
 
 const FAQCard = ({ questionText, answerText }: FAQCardProp) => {
@@ -19,7 +20,7 @@ const FAQCard = ({ questionText, answerText }: FAQCardProp) => {
                     {showAnswer ? <BiChevronUp /> : <BiChevronDown />}
                 </button>
             </div>
-            <div className={`${showAnswer ? 'block border-t border-[#c9c4c4cc]' : "hidden"} py-2`}>
+            <div className={`${showAnswer ? 'block border-t border-[#c9c4c4cc]' : "hidden"} text-justify py-2`}>
                 <div>
                     {answerText}
                 </div>
