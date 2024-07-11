@@ -64,12 +64,10 @@ p{
 
 /* Textinput */
 .input-brand{
-/* width: 308px; */
 height: 56px;
 border-radius: 20px;
 border: 1px solid #c9c4c4cc;
 padding-inline: 32px;
-padding-block: 23px;
 color: #555555;
 }
 

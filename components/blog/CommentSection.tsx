@@ -17,11 +17,11 @@ const CommentSection = () => {
                     <div className='flex sm:flex-row flex-col items-start justify-between gap-4 w-full'>
                         <TextInput
                             placeholder='Enter Your Name Here'
-                            overrideStyles={"w-[348px]"}
+                            overrideStyles={"w-full sm:m-w-[348px]"}
                         />
                         <TextInput
                             placeholder='Enter Your Email Here'
-                            overrideStyles={"w-[348px]"}
+                            overrideStyles={"w-full m-w-[348px]"}
                         />
                     </div>
                     <textarea name="" id="" className='w-full h-[192px] border border-border-[#c9c4c4cc] p-4 rounded-3xl' placeholder='Write Your Comment'></textarea>

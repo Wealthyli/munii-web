@@ -60,24 +60,24 @@ const BlogPostContent = ({
                                     <p className='text-center text-2xl'>{post.shareCount}<br /><span className='text-lg text-grey/02'>Shares</span></p>
                                     <CustomButton
                                         action={() => console.log('hello')}
-                                        color='default'
-                                        overrideStyle="flex items-center justify-center gap-4 bg-[#3B5998] text-white font-normal"
+                                        // color='default'
+                                        overrideStyle="flex items-center justify-center gap-4 bg-[#3B5998] text-white font-normal sm:w-[24vw] w-full rounded-2xl p-4"
                                     >
                                         <Image src={facebook} width={24} height={24} alt='blog' />
                                         Shares {post.faceBookCount}
                                     </CustomButton>
                                     <CustomButton
                                         action={() => console.log('hello')}
-                                        color='default'
-                                        overrideStyle="flex items-center justify-center gap-4 bg-[#FF0000] text-white font-normal"
+                                        // color='default'
+                                        overrideStyle="flex items-center justify-center gap-4 bg-[#FF0000] text-white font-normal w-full sm:w-[24vw] rounded-2xl p-4"
                                     >
                                         <Image src={pinterest} width={24} height={24} alt='blog' />
                                         Shares {post.pinterestCount}
                                     </CustomButton>
                                     <CustomButton
                                         action={() => console.log('hello')}
-                                        color='default'
-                                        overrideStyle="flex items-center justify-center gap-4 bg-[#007BB6] text-white font-normal"
+                                        // color='default'
+                                        overrideStyle="flex items-center justify-center gap-4 bg-[#007BB6] w-full sm:w-[9vw] text-white font-normal rounded-2xl p-4"
                                     >
                                         <Image src={linkdin} width={24} height={24} alt='blog' />
                                         {post.linkDlnCount}

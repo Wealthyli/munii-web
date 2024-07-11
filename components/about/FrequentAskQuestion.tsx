@@ -20,7 +20,7 @@ const FrequentAskQuestion = () => {
                 </p>
                 <CustomButton
                     action={onContact}
-                    color='deafault'
+                    color='default'
                 >
                     Contact Us
                 </CustomButton>

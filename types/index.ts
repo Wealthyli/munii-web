@@ -178,20 +178,20 @@ export interface TextInputProp {
 export interface BlogPostProp {
   id: number;
   // slug: any;
-  title: string;
-  category: string;
-  coverImage: any;
-  coverText: string;
-  authorName: string;
-  authorAvatar: any;
-  date: any;
-  shareCount: number;
-  viewCount: number;
-  readTime: any;
-  blogContent: string;
-  faceBookCount: number;
-  pinterestCount: number;
-  linkDlnCount: number;
+  // title: string;
+  // category: string;
+  // coverImage: any;
+  // coverText: string;
+  // authorName: string;
+  // authorAvatar: any;
+  // date: any;
+  // shareCount: number;
+  // viewCount: number;
+  // readTime: any;
+  // blogContent: string;
+  // faceBookCount: number;
+  // pinterestCount: number;
+  // linkDlnCount: number;
 }
 
 export interface SeriesCardProp {
