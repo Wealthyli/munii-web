@@ -79,7 +79,7 @@ outline: none;
 
 /* brand-btn */
   .btn-brand {
-    @apply px-3 py-[7px] sm:px-6 sm:py-[10px] text-lg md:text-base rounded-2xl cursor-pointer font-medium disabled:cursor-not-allowed;
+    @apply px-8 py-[18px] sm:px-6 sm:py-[10px] text-lg font-semibold rounded-2xl cursor-pointer disabled:cursor-not-allowed;
   }
 
 

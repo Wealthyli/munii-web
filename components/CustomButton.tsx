@@ -7,6 +7,8 @@ const colors = {
   default: "btn-brand text-primary bg-black",
 };
 
+type color = string;
+
 const CustomButton = ({
   color,
   disabled = false,

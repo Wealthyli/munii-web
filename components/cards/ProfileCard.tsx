@@ -5,7 +5,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 const ProfileCard = () => {
     return (
-        <article className='flex flex-row gap-8 items-start max-w-[900px] mt-8'>
+        <article className='flex flex-col sm:flex-row gap-8 items-start max-w-[900px] mt-8'>
             <Image src={jameelah} width={110} height={110} alt='profile pics' />
             <div className='flex flex-col gap-4 '>
                 <div>

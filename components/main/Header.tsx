@@ -66,7 +66,7 @@ function Header() {
           <li className={`${currentPath === '/contact' ? 'active' : ''}`}>
             <Link href="/contact">Contact Us</Link>
           </li>
-          <li className={`${currentPath === '/blog' || "/blog/[id]" ? 'active' : ''}`}>
+          <li className={`${(currentPath === '/blog' || currentPath.startsWith('/blog/')) ? 'active' : ''}`}>
             <Link href="/blog">Blog</Link>
           </li>
         </ul>

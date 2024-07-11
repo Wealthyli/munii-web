@@ -61,6 +61,7 @@ const BlogPostContent = ({
                                     <CustomButton
                                         action={() => console.log('hello')}
                                         color='default'
+                                        overrideStyle="flex items-center justify-center gap-4 bg-[#3B5998] text-white font-normal"
                                     >
                                         <Image src={facebook} width={24} height={24} alt='blog' />
                                         Shares {post.faceBookCount}
@@ -68,6 +69,7 @@ const BlogPostContent = ({
                                     <CustomButton
                                         action={() => console.log('hello')}
                                         color='default'
+                                        overrideStyle="flex items-center justify-center gap-4 bg-[#FF0000] text-white font-normal"
                                     >
                                         <Image src={pinterest} width={24} height={24} alt='blog' />
                                         Shares {post.pinterestCount}
@@ -75,6 +77,7 @@ const BlogPostContent = ({
                                     <CustomButton
                                         action={() => console.log('hello')}
                                         color='default'
+                                        overrideStyle="flex items-center justify-center gap-4 bg-[#007BB6] text-white font-normal"
                                     >
                                         <Image src={linkdin} width={24} height={24} alt='blog' />
                                         {post.linkDlnCount}
