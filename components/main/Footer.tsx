@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaFacebookSquare, FaTwitter, FaVimeoV, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 
 
@@ -20,15 +21,14 @@ function Footer() {
             <Link href="">Help</Link>
           </div>
           <div className="text-white flex gap-8">
-            <Link href="/">
+            <Link href="https://www.instagram.com/munii_finance/?hl=en">
               <FaFacebookSquare className="w-6 h-6" />
             </Link>
-            <FaTwitter className="w-6 h-6" />
             <Link href="https://www.instagram.com/munii_finance/?hl=en">
-              <FaVimeoV className="w-6 h-6" />
+              <AiFillInstagram className="w-6 h-6" />
             </Link>
             <Link href="https://x.com/MuniiFinance">
-              <FaYoutube className="w-6 h-6" />
+              <FaTwitter className="w-6 h-6" />
             </Link>
           </div>
         </div>
