@@ -42,7 +42,7 @@ function Hero() {
         <div className="mt-8 flex flex-col lg:flex-row gap-4 ">
           <button
             onClick={openModal}
-            className="flex flex-row bg-black p-4 items-center justify-evenly md:justify-center gap-3 w-full md:w-[330px] h-[100px] border rounded-md"
+            className="flex flex-row bg-black p-4 items-center justify-evenly md:justify-center gap-3 w-full md:w-[330px] h-[100px] border rounded-[15px]"
           >
             <Image src={googlePlay} alt="google play" />
             <div className="flex flex-col text-white gap-[0.25rem] text-left">
@@ -52,7 +52,7 @@ function Hero() {
           </button>
           <button
             onClick={openModal}
-            className="flex flex-row bg-black p-4 items-center justify-evenly md:justify-center gap-3 w-full md:w-[330px] h-[100px] border rounded-md"
+            className="flex flex-row bg-black p-4 items-center justify-evenly md:justify-center gap-3 w-full md:w-[330px] h-[100px] border rounded-[15px]"
           >
             <IoLogoApple className="text-white w-[52px] h-[56px]" />
             <div className="flex flex-col text-white gap-[0.25rem] text-left">

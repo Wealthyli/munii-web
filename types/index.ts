@@ -25,9 +25,10 @@ export interface CustomButtonProp {
   color?: string;
   disabled?: boolean | undefined;
   routeTo?: string;
-  action: (key: any) => void;
+  action?: (key?: any) => void;
   children?: any;
   overrideStyle?: any;
+  [key: string]: any;
 }
 
 

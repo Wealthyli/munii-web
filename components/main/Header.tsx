@@ -56,7 +56,7 @@ function Header() {
         <Link className="" href="/">
           <Image src={logo} alt="logo" />
         </Link>
-        <ul className="md:flex items-center justify-between text-white text-lg gap-6 hidden">
+        <ul className="lg:flex items-center justify-between text-white text-lg gap-6 hidden">
           <li className={`${currentPath === '/' ? 'active' : ''}`}>
             <Link href="/">Home</Link>
           </li>
@@ -70,7 +70,7 @@ function Header() {
             <Link href="/blog">Blog</Link>
           </li>
         </ul>
-        <div className="md:flex items-center gap-[1.5rem] hidden ">
+        <div className="lg:flex items-center gap-[1.5rem] hidden ">
           <button className="p-2 bg-white rounded-[50%]">
             <Link href="https://www.instagram.com/munii_finance/?hl=en">
               <AiOutlineTwitter className="text-black w-[30px] h-[30px]" />
@@ -88,7 +88,7 @@ function Header() {
             Use Web App
           </button>
         </div>
-        <div className="flex md:hidden">
+        <div className="flex lg:hidden">
           {isMobileMenuOpen ? (
             <TfiClose
               className="text-2xl cursor-pointer text-white"
@@ -108,7 +108,7 @@ function Header() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 100, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden fixed top-[3.4rem] right-0 w-64 h-full bg-black z-50 mobile-menu"
+              className="lg:hidden fixed top-[3.4rem] right-0 w-64 h-full bg-black z-50 mobile-menu"
             >
               <div className="text-center flex flex-col items-center justify-center py-8">
                 <Link

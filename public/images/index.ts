@@ -33,8 +33,12 @@ import pinterest from "./mdi_pinterest.svg"
 import view from "./views.svg"
 import linkdin from "./linkdin.svg"
 import Trackpic from "./Trackpic.png"
+import accessibility from "./accessibility.png"
+import education from "./cil_education.png";
 
 export {
+  education,
+  accessibility,
   account,
   apphome,
   bank,
