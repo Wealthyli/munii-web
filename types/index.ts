@@ -6,6 +6,7 @@ import { ReactNode, CSSProperties } from 'react';
 export interface CardProp {
   title: string;
   text: string;
+  icon: any
 }
 
 export interface TestimonialCardProp {

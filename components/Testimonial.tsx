@@ -1,18 +1,35 @@
 // @ts-nocheck
-'use client'
+"use client";
 import React from "react";
 import { TestimonialCardProp } from "@/types";
 import Image from "next/image";
 import { doe } from "@/public/images";
-import CTA from './main/CTA'
+import CTA from "./main/CTA";
 import { motion } from "framer-motion";
 
-
 function Testimonial() {
+  const testimonials = [
+    {
+      image: doe ,
+      name: "Mike Evans",
+      text: "Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits.",
+    },
+    {
+      image: doe ,
+      name: "Patricia Holmes",
+      text: "Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits.",
+    },
+    {
+      image: doe ,
+      name: "Jack Smith",
+      text: "Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits.",
+    },
+  ];
+
   const Card = ({ image, text, name }: TestimonialCardProp) => {
     return (
       <div className="">
-        <div className="relative left-[36.81px] top-[3rem] flex items-end justify-center overflow-hidden w-[99px] h-[100px] rounded-[50%] bg-[#D9D9D9]">
+        <div className="relative left-[36.81px] top-[2rem] flex items-end justify-center overflow-hidden w-[100px] h-[100px] rounded-[50%] bg-[#D9D9D9]">
           <Image
             alt="customer image"
             src={image}
@@ -42,30 +59,21 @@ function Testimonial() {
           initial={{ opacity: 0 }}
           whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
           transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="text-[36px] text-center font-semibold leading-[54px] text-text max-w-[678px]">
+          className="text-[36px] text-center font-semibold leading-[54px] text-text max-w-[678px]"
+        >
           What Our Customers Say About Us
         </motion.h1>
-        <p className="text-s-text leading-[24px] text-[16px] text-center max-w-[549px]">
-          Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
-        </p>
+        
       </div>
       <div className="flex flex-row flex-wrap justify-evenly">
-        <Card
-          image={doe}
-          name="John Doe"
-          text="Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits."
-        />
-        <Card
-          image={doe}
-          name="John Doe"
-          text="Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits."
-        />
-        <Card
-          image={doe}
-          name="John Doe"
-          text="Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits."
-        />
+        {testimonials.map((item, key) => (
+          <Card 
+            key={key}
+            image={item.image}
+            text={item.text}
+            name={item.name}
+          />
+        ))}
       </div>
       <CTA />
     </div>

@@ -27,11 +27,10 @@ function Hero() {
         className="flex flex-col justify-center items-center lg:items-stretch w-full lg:max-w-[45%]"
       >
         <h1 className="text-[36px] md:text-[48px] leading-[48px] md:leading-[72px] font-bold text-center lg:text-left">
-          Ready to Take Control of Your Finances?
+          Seamless Financial Management Made<span className="text-primary">{" "}Simple</span>
         </h1>
         <p className="text-[16px] md:text-[18px] mt-4 lg:max-w-[31rem] text-center lg:text-left">
-          Discover the power of smart budgeting with our app. Optimize your
-          spending, reach your goals faster, and enjoy a more fulfilling life.
+          Unify your accounts, monitor your spending, budget and invest with ease.
         </p>
         <div className="lg:hidden lg:max-w-[60%] mt-10 ">
           <Image
