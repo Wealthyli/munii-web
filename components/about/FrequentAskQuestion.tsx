@@ -23,7 +23,7 @@ const FrequentAskQuestion = () => {
           inceptos himenaeos. Curabitur tempus urna at turpis condimentum
           lobortis. Ut commodo efficitur neque.
         </p>
-        <CustomButton action={onContact} color="deafault">
+        <CustomButton action={onContact} color="default">
           Contact Us
         </CustomButton>
       </div>

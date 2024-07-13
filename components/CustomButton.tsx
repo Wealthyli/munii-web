@@ -1,9 +1,10 @@
-//use client
+"use client";
+
 import Link from "next/link";
 import { MouseEventHandler } from "react";
 import { CustomButtonProp } from "@/types";
 
-const colors = {
+const colors: Record<string, string> = {
   primary: "btn-brand bg-primary text-black ",
   default: "btn-brand text-primary bg-black",
 };
@@ -25,10 +26,7 @@ const CustomButton = ({
     }
   };
 
-  // var selectedColor:string;
-
-  // color ? selectedColor = colors[color] : selectedColor = colors.default
-  const selectedColor = colors[color] || colors.default;
+  const selectedColor = colors[color as string] || colors.default;
 
   return (
     <button
