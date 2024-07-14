@@ -50,6 +50,14 @@ function Header() {
     setIsModalOpen((prev) => !prev);
   };
 
+  const isActive = (path: string) => {
+    if (path === "/blog") {
+      return currentPath === path || currentPath.startsWith("/blog/");
+    }
+    return currentPath === path;
+  };
+
+
   return (
     <header className="bg-black">
       <nav className="flex items-center justify-between px-4 lg:px-[5rem] md:py-[1.5rem] ">
@@ -57,16 +65,16 @@ function Header() {
           <Image src={logo} alt="logo" />
         </Link>
         <ul className="lg:flex items-center justify-between text-white text-lg gap-6 hidden">
-          <li className={`${currentPath === '/' ? 'active' : ''}`}>
+          <li className={`${isActive("/") ? "active" : ""}`}>
             <Link href="/">Home</Link>
           </li>
-          <li className={`${currentPath === '/about' ? 'active' : ''}`}>
+          <li className={`${isActive("/about") ? "active" : ""}`}>
             <Link href="/about">About Us</Link>
           </li>
-          <li className={`${currentPath === '/contact' ? 'active' : ''}`}>
+          <li className={`${isActive("/contact") ? "active" : ""}`}>
             <Link href="/contact">Contact Us</Link>
           </li>
-          <li className={`${currentPath === '/blog' || "/blog/[id]" ? 'active' : ''}`}>
+          <li className={`${isActive("/blog") ? "active" : ""}`}>
             <Link href="/blog">Blog</Link>
           </li>
         </ul>
