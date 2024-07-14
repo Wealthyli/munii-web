@@ -1,6 +1,6 @@
 import React from 'react'
-import { UserSubscriptionLineGraph,UserSubscriptionPieChart } from './index'; 
-
+import UserSubscriptionLineGraph from './UserSubscriptionLineGraph';
+import UserSubscriptionPieChart from './UserSubscriptionPieChart';
 export default function UserubscriptionGraph() {
   const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July',"August","September", "October","Novenber","December"];
   const dataset1 = {
