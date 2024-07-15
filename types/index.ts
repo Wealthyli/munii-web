@@ -207,13 +207,22 @@ export interface FAQCardProp {
  */
 export interface PostRaw {
   _createdAt: string;
-  slug: {current: string};
+  slug: { current: string };
   title: string;
-  body: {children: {text: string}[]}[];
+  body: { 
+    _type: string;
+    _key: string;
+    style: string;
+    children: { 
+      _type: string; 
+      _key: string;
+      text: string 
+    }[];
+  }[];
   categories: { _id: string, title: string }[];
   publishedAt: string;
-  author: {name: string, image: {asset: {_ref: string}}};
-  mainImage: {asset: {url: string}};
+  author: { name: string, image: { asset: { _ref: string } } };
+  mainImage: { asset: { url: string } };
   _id: string;
 }
 

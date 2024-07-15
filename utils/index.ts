@@ -95,6 +95,39 @@ export async function getBlogCategories() {
   }
 }
 
+/**
+ * A function to transform PostRaw to Post
+ */
+const transformPost = (rawPost: PostRaw): Post => {
+  const concatenateBodyText = (body: {children: {text: string}[]}[]): string => {
+    return body
+      .map(block => {
+        if (block.children) {
+          return block.children.map(child => child.text).join('');
+        }
+        return '';
+      })
+      .join('\n\n');
+  };
+
+  return {
+    createdAt: rawPost._createdAt,
+    slug: rawPost.slug.current,
+    title: rawPost.title,
+    body: concatenateBodyText(rawPost.body),
+    categories: rawPost.categories.map(category => ({
+      id: category._id,
+      title: category.title,
+    })),
+    publishedAt: rawPost.publishedAt,
+    author: rawPost.author.name,
+    authorImage: rawPost.author.image ? rawPost.author.image.asset._ref : undefined,
+    mainImageUrl: rawPost.mainImage.asset.url,
+    id: rawPost._id,
+    snippet: rawPost.body[0]?.children[0]?.text.slice(0, 250) + '...',   
+  };
+};
+
 export async function getBlogById(id: string): Promise<{ props: { post: Post | null } }> {
   const CONTENT_QUERY = `*[_type == "post" && _id == $id] {
     _createdAt,
@@ -133,22 +166,7 @@ export async function getBlogById(id: string): Promise<{ props: { post: Post | n
       };
     }
 
-    const mappedPost: Post = {
-      createdAt: post._createdAt,
-      slug: post.slug.current,
-      title: post.title,
-      body: post.body[0]?.children[0]?.text,
-      categories: post.categories.map(category => ({
-        id: category._id,
-        title: category.title
-      })),
-      publishedAt: post.publishedAt,
-      author: post.author.name,
-      authorImage: urlForImage(post.author.image.asset._ref), 
-      mainImageUrl: post.mainImage?.asset?.url,
-      id: post._id,
-      snippet: post.body[0]?.children[0]?.text.slice(0, 250) + '...',   
-    };
+    const mappedPost = transformPost(post);
 
     return {
       props: {
@@ -162,5 +180,113 @@ export async function getBlogById(id: string): Promise<{ props: { post: Post | n
         post: null
       }
     };
+  }
+}
+
+
+export async function getTopReadPost(): Promise<Post | null> {
+  const TOP_READ_POST_ID = "f264c9c0-e6ae-49be-adb1-a8d5a991dfdd";
+  const CONTENT_QUERY = `*[_type == "post" && _id == $id] {
+    _createdAt,
+    slug,
+    title,
+    body,
+    categories[]-> {
+      _id,
+      title
+    },
+    publishedAt,
+    author-> {
+      name,
+      image {
+        asset {
+          _ref
+        }
+      }
+    },
+    mainImage {
+      asset-> {
+        url
+      }
+    },
+    _id
+  }[0]`;
+
+  try {
+    const post: PostRaw = await client.fetch(CONTENT_QUERY, { id: TOP_READ_POST_ID });
+
+    if (!post) return null;
+
+    return {
+      createdAt: post._createdAt,
+      slug: post.slug.current,
+      title: post.title,
+      body: post.body.map(block => block.children.map(child => child.text).join(' ')).join('\n'),
+      categories: post.categories.map(category => ({
+        id: category._id,
+        title: category.title
+      })),
+      publishedAt: post.publishedAt,
+      author: post.author.name,
+      authorImage: urlForImage(post.author.image.asset._ref), 
+      mainImageUrl: post.mainImage?.asset?.url,
+      id: post._id,
+      snippet: post.body[0]?.children[0]?.text.slice(0, 250) + '...',
+    };
+  } catch (error) {
+    console.error('Error fetching top read post:', error);
+    return null;
+  }
+}
+
+export async function getRelatedPosts(categoryId: string): Promise<Post[]> {
+  const CONTENT_QUERY = `*[_type == "post" && references($categoryId)] {
+    _createdAt,
+    slug,
+    title,
+    body,
+    categories[]-> {
+      _id,
+      title
+    },
+    publishedAt,
+    author-> {
+      name,
+      image {
+        asset {
+          _ref
+        }
+      }
+    },
+    mainImage {
+      asset-> {
+        url
+      }
+    },
+    _id
+  }`;
+
+  try {
+    const posts: PostRaw[] = await client.fetch(CONTENT_QUERY, { categoryId });
+
+    return posts.map(post => ({
+      createdAt: post._createdAt,
+      slug: post.slug.current,
+      title: post.title,
+      body: post.body.map(block => block.children.map(child => child.text).join(' ')).join('\n'),
+      categories: post.categories.map(category => ({
+        id: category._id,
+        title: category.title
+      })),
+      publishedAt: post.publishedAt,
+      author: post.author.name,
+      authorImage: urlForImage(post.author.image.asset._ref), 
+      mainImageUrl: post.mainImage?.asset?.url,
+      id: post._id,
+      snippet: post.body[0]?.children[0]?.text.slice(0, 250) + '...',
+    }));
+  } catch (error) {
+    console.error('Error fetching related posts:', error);
+    return [];
   }
 }

@@ -1,19 +1,28 @@
 import React from 'react';
 import SeriesCard from './SeriesCard';
-import { topReadPost } from '@/data';
-import { SeriesBlogCardProp } from '@/types';
+import { Post } from '@/types';
+
+interface SeriesBlogCardProp {
+  title: string;
+  data: Post[];
+}
 
 const SeriesBlogCard = ({ title, data }: SeriesBlogCardProp) => {
-    return (
-        <div className='flex flex-col gap-4'>
-            <h1 className='text-2xl'>Related Post</h1>
-            {topReadPost.map((blog, index) => {
-                return (
-                    <SeriesCard key={index} {...blog} />
-                )
-            })}
-        </div>
-    );
+  return (
+    <div className='flex flex-col gap-4'>
+      <h1 className='text-2xl'>{title}</h1>
+      {data.map((blog, index) => {
+        return (
+          <SeriesCard
+            key={index}
+            blogImage={blog.mainImageUrl}
+            title={blog.title}
+            date={new Date(blog.publishedAt).toLocaleDateString()}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default SeriesBlogCard;

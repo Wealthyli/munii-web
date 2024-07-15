@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useParams, useSearchParams } from "next/navigation";
-import { getBlogById } from "@/utils";
-import { BlogPostProp } from "@/types";
+import { useParams } from "next/navigation";
+import { getBlogById, getRelatedPosts } from "@/utils";
+import { BlogPostProp, Post } from "@/types";
 import {
   clock,
   view,
@@ -16,20 +16,27 @@ import TextInput from "../TextInput";
 import CustomButton from "../CustomButton";
 import { ProfileCard, SeriesBlogCard } from "../cards";
 import CommentSection from "./CommentSection";
-import { topReadPost } from "@/data";
 
 const BlogPostContent = () => {
   const [post, setPost] = useState<BlogPostProp | null>(null);
+  const [relatedPosts, setRelatedPosts] = useState<Post[]>([]);
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
 
   useEffect(() => {
     if (id) {
-      const fetchPost = async () => {
+      const fetchPostData = async () => {
         const { props } = await getBlogById(id);
-        setPost(props.post);
+        const fetchedPost = props.post;
+        setPost(fetchedPost);
+
+        if (fetchedPost && fetchedPost.categories.length > 0) {
+          const categoryId = fetchedPost.categories[0].id;
+          const related = await getRelatedPosts(categoryId);
+          setRelatedPosts(related);
+        }
       };
-      fetchPost();
+      fetchPostData();
     }
   }, [id]);
 
@@ -114,7 +121,7 @@ const BlogPostContent = () => {
                 submitted through this form.
               </p>
             </div>
-            <SeriesBlogCard data={topReadPost} title={"Related post"} />
+            <SeriesBlogCard data={relatedPosts} title={"Related Posts"} />
           </div>
         </div>
       </div>
