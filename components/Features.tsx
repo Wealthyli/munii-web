@@ -80,7 +80,7 @@ function Features() {
           />
         ))}
       </div>
-      <section className="mt-24 flex flex-col gap-20">
+      <section className="mt-24 flex flex-col gap-20 overflow-x-hidden">
         <div className="flex flex-col lg:flex-row justify-around items-center gap-8 lg:gap-0">
           <motion.div
             initial={{ opacity: 0 }}

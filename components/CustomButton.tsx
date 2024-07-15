@@ -1,8 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { MouseEventHandler } from "react";
 import { CustomButtonProp } from "@/types";
 
-
-const colors = {
+const colors: Record<string, string> = {
   primary: "btn-brand bg-primary text-black ",
   default: "btn-brand text-primary bg-black",
 };
@@ -19,17 +21,20 @@ const CustomButton = ({
   ...otherProps
 }: CustomButtonProp) => {
 
-  const handleButtonClick = (e: MouseEvent) => {
+  const handleButtonClick: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.stopPropagation();
-    action ? action() : null;
+    if (action) {
+      action();
+    }
   };
 
-  const selectedColor = colors[color];
+  const selectedColor = colors[color as string] || colors.default;
+
   return (
     <button
       onClick={handleButtonClick}
       disabled={disabled}
-      className={`${selectedColor} ${overrideStyle ? overrideStyle : ""}`}
+      className={`${selectedColor} ${overrideStyle || ""}`}
       {...otherProps}
     >
       {routeTo ? (

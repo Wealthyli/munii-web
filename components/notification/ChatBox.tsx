@@ -13,7 +13,6 @@ import React from "react";
 import { BiArrowBack, BiTrash } from "react-icons/bi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { GrAttachment, GrEmoji } from "react-icons/gr";
-
 // Chat Component To Handle Message
 
 const ChatBox: React.FC<ChatBoxProps> = ({
@@ -90,7 +89,7 @@ const ChatBox: React.FC<ChatBoxProps> = ({
 
             <GrEmoji fontSize="22px" cursor="pointer" />
           </HStack>
-          <custombutton
+          <Button
             bg="black"
             color="brand.500"
             p="10px 25px"

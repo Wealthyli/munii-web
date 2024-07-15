@@ -21,13 +21,19 @@ export interface ButtonProp {
   className: any;
 }
 
+const colors = {
+  primary: "btn-brand bg-primary text-black ",
+  default: "btn-brand text-primary bg-black",
+};
+
 export interface CustomButtonProp {
-  color?: string;
+  color?: keyof typeof colors;
   disabled?: boolean | undefined;
   routeTo?: string;
-  action: (key: any) => void;
+  action?: (key?: any) => void;
   children?: any;
   overrideStyle?: any;
+  [key: string]: any;
 }
 
 
@@ -176,24 +182,7 @@ export interface TextInputProp {
   [key: string]: any;
 }
 
-export interface BlogPostProp {
-  id: number;
-  // slug: any;
-  // title: string;
-  // category: string;
-  // coverImage: any;
-  // coverText: string;
-  // authorName: string;
-  // authorAvatar: any;
-  // date: any;
-  // shareCount: number;
-  // viewCount: number;
-  // readTime: any;
-  // blogContent: string;
-  // faceBookCount: number;
-  // pinterestCount: number;
-  // linkDlnCount: number;
-}
+
 
 export interface SeriesCardProp {
   blogImage: any;
@@ -209,4 +198,58 @@ export interface SeriesBlogCardProp {
 export interface FAQCardProp {
   questionText: string;
   answerText: string;
+}
+
+
+
+/**
+ * A raw post object from Sanity
+ */
+export interface PostRaw {
+  _createdAt: string;
+  slug: { current: string };
+  title: string;
+  body: {
+    _type: string;
+    _key: string;
+    style: string;
+    children: {
+      _type: string;
+      _key: string;
+      text: string
+    }[];
+  }[];
+  categories: { _id: string, title: string }[];
+  publishedAt: string;
+  author: { name: string, image: { asset: { _ref: string } } };
+  mainImage: { asset: { url: string } };
+  _id: string;
+}
+
+/**
+ * A strongly typed post object
+ */
+export interface Post {
+  createdAt?: string;
+  slug?: string;
+  title: string;
+  body: string;
+  categories: { id: string, title: string }[];
+  publishedAt: string;
+  author: string;
+  authorImage?: string,
+  mainImageUrl: string;
+  id: string;
+  shareCount?: number | string;
+  snippet?: string
+}
+
+export interface BlogPostProp extends Post { }
+
+export interface Comment {
+  _id: string;
+  name: string;
+  email: string;
+  comment: string;
+  createdAt: string;
 }

@@ -32,7 +32,7 @@ function CTA() {
           Download Munii App for iOS or Android
         </h1>
       </div>
-      <div className="mt-8 flex flex-col lg:flex-row gap-4">
+      <div className="mt-8 flex flex-col md:flex-row gap-4">
         <button onClick={openModal} className="flex flex-row bg-black p-4 items-center justify-center gap-3 w-[230px] h-[80px] rounded-[15px]">
           <Image src={googlePlay} alt="google play" />
           <div className="flex flex-col text-white gap-[0.25rem] text-left">

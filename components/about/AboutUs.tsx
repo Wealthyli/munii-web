@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className="absolute inset-0 bg-black bg-opacity-60" />
             <div className="relative z-10 flex flex-col gap-4 text-center max-w-[750px]">
                 <p className='text-lg '>About Us</p>
-                <h1 className='text-5xl font-semibold'>Empowering Your Financial IQ, One Insight at a Time</h1>
+                <h1 className='text-[48px] font-semibold leading-[72px]'>Empowering Your Financial IQ, One Insight at a Time</h1>
             </div>
         </section>
     );

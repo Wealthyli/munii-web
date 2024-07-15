@@ -312,60 +312,60 @@ export const statData = [
 
 export const teamMembers = [
   {
-    name: 'John Doe',
-    title: 'Director',
-    image: '/images/Ellipse 2.png',
+    name: 'Misan Arenyeka',
+    title: 'CEO/Founder',
+    image: '/images/misan.jpg',
   },
   {
-    name: 'Jane Doe',
+    name: 'Boluwatife Oladejo',
     title: 'CTO',
-    image: '/images/Ellipse 2.png',
+    image: '/images/tife.jpg',
   },
   {
-    name: 'John Smith',
+    name: 'Leke White',
     title: 'COO',
-    image: '/images/Ellipse 2.png',
+    image: '/images/doe.png',
   },
-  {
-    name: 'John Smith',
-    title: 'COO',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'COO',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'COO',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'Project Manager',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'Developer',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'Developer',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'Developer',
-    image: '/images/Ellipse 2.png',
-  },
-  {
-    name: 'John Smith',
-    title: 'Developer',
-    image: '/images/Ellipse 2.png',
-  },
+  // {
+  //   name: 'John Smith',
+  //   title: 'COO',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'COO',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'COO',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'Project Manager',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'Developer',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'Developer',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'Developer',
+  //   image: '/images/Ellipse 2.png',
+  // },
+  // {
+  //   name: 'John Smith',
+  //   title: 'Developer',
+  //   image: '/images/Ellipse 2.png',
+  // },
 ]
 
 export const blogPost = [
