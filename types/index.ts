@@ -244,17 +244,12 @@ export interface Post {
   snippet?: string
 }
 
-// export interface BlogPostProp {
-//   createdAt?: string;
-//   slug?: string;
-//   title: string;
-//   body: string;
-//   categories: {id: string, title: string}[];
-//   publishedAt: string;
-//   author: string;
-//   mainImageUrl: string;
-//   id: string;
-//   shareCount : number | string;
-//   authorImage?: string,
-// }
 export interface BlogPostProp extends Post {}
+
+export interface Comment {
+  _id: string;
+  name: string;
+  email: string;
+  comment: string;
+  createdAt: string; 
+}

@@ -290,3 +290,28 @@ export async function getRelatedPosts(categoryId: string): Promise<Post[]> {
     return [];
   }
 }
+
+export async function addComment(comment:any) {
+  return client.create({
+    _type: 'comment',
+    ...comment,
+  });
+}
+
+export async function fetchComments(postId:string) {
+  const query = `*[_type == "comment" && post._ref == $postId && approved == true] {
+    _id,
+    name,
+    email,
+    comment,
+    createdAt
+  }`;
+  
+  try {
+    const comments = await client.fetch(query, { postId });
+    return comments;
+  } catch (error) {
+    console.error('Error fetching comments:', error);
+    return [];
+  }
+}

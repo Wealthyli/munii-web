@@ -60,7 +60,7 @@ const BlogPostContent = () => {
           <div className="w-[20px] h-[1px] bg-s-text"></div>
           <div className="flex gap-2">
             <Image src={clock} width={14} height={14} alt="blog" />
-            <span> 5 min read</span>
+            <span> 2 min read</span>
           </div>
           <div className="w-[20px] h-[1px] bg-s-text"></div>
           <div className="flex gap-2">
@@ -88,7 +88,7 @@ const BlogPostContent = () => {
                 <br />
                 <span className="text-lg text-grey/02">Shares</span>
               </p>
-              <CustomButton action={() => console.log("hello")} color="default">
+              {/* <CustomButton action={() => console.log("hello")} color="default">
                 <Image src={facebook} width={24} height={24} alt="blog" />
                 Shares 20
               </CustomButton>
@@ -99,10 +99,10 @@ const BlogPostContent = () => {
               <CustomButton action={() => console.log("hello")} color="default">
                 <Image src={linkdin} width={24} height={24} alt="blog" />
                 15
-              </CustomButton>
+              </CustomButton> */}
             </div>
-            <ProfileCard />
-            <CommentSection />
+            {/* <ProfileCard /> */}
+            <CommentSection postId={post.id}/>
           </div>
           <div className="flex flex-col w-full md:w-[25%] gap-4">
             <p className="text-lg">
