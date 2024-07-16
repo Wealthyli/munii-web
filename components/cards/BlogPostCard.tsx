@@ -30,7 +30,7 @@ const BlogPostCard = ({
           objectFit="cover"
           className="absolute top-0 left-0" />
       </div>
-      <h1 className="text-2xl font-medium">{title}</h1>
+      <h1 className="text-2xl font-medium line-clamp-2">{title}</h1>
       <div className="flex items-start justify-between ">
         <div className="flex gap-2 items-start justify-start">
           <div className="w-[28px] h-[28px]">
