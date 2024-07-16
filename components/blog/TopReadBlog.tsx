@@ -33,7 +33,7 @@ const TopReadBlog = () => {
           <h1 className="text-4xl font-semibold">Top Reads</h1>
           {topReadPost && (
             <article className="max-w-[804px] flex flex-col gap-4">
-              <div className="flex items-center justify-center bg-gray-400 overflow-hidden relative rounded-3xl w-[804px] h-[344px]">
+              <div className="flex items-center justify-center bg-gray-400 overflow-hidden relative rounded-3xl w-full md:w-[804px] h-[344px]">
                 <Image
                   src={topReadPost.mainImageUrl}
                   layout="fill"
