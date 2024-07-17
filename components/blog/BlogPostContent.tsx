@@ -102,7 +102,7 @@ const BlogPostContent = () => {
               </CustomButton> */}
             </div>
             {/* <ProfileCard /> */}
-            <CommentSection postId={post.id}/>
+            <CommentSection postId={post.id} />
           </div>
           <div className="flex flex-col w-full md:w-[25%] gap-4">
             <p className="text-lg">

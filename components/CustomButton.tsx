@@ -9,6 +9,8 @@ const colors: Record<string, string> = {
   default: "btn-brand text-primary bg-black",
 };
 
+type color = string;
+
 const CustomButton = ({
   color,
   disabled = false,

@@ -27,7 +27,7 @@ const colors = {
 };
 
 export interface CustomButtonProp {
-  color?: keyof typeof colors;  
+  color?: keyof typeof colors;
   disabled?: boolean | undefined;
   routeTo?: string;
   action?: (key?: any) => void;
@@ -209,14 +209,14 @@ export interface PostRaw {
   _createdAt: string;
   slug: { current: string };
   title: string;
-  body: { 
+  body: {
     _type: string;
     _key: string;
     style: string;
-    children: { 
-      _type: string; 
+    children: {
+      _type: string;
       _key: string;
-      text: string 
+      text: string
     }[];
   }[];
   categories: { _id: string, title: string }[];
@@ -234,22 +234,22 @@ export interface Post {
   slug?: string;
   title: string;
   body: string;
-  categories: {id: string, title: string}[];
+  categories: { id: string, title: string }[];
   publishedAt: string;
   author: string;
   authorImage?: string,
   mainImageUrl: string;
   id: string;
-  shareCount? : number | string;
+  shareCount?: number | string;
   snippet?: string
 }
 
-export interface BlogPostProp extends Post {}
+export interface BlogPostProp extends Post { }
 
 export interface Comment {
   _id: string;
   name: string;
   email: string;
   comment: string;
-  createdAt: string; 
+  createdAt: string;
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import { Blog, BlogPost } from '@/components/blog'
 import { Header, Footer } from '@/components/main'
 import React from 'react'

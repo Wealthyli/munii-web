@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { CommentCard } from '../cards';
 import CustomButton from '../CustomButton';
-import { addComment, fetchComments } from '@/utils'; 
-import { Comment } from '@/types'; 
+import { addComment, fetchComments } from '@/utils';
+import { Comment } from '@/types';
 
 
 
@@ -93,7 +93,7 @@ const CommentSection: React.FC<CommentSectionProps> = ({ postId }) => {
             onChange={(e) => setCommentText(e.target.value)}
             required
           ></textarea>
-          <CustomButton color='default' action={() => {}}>
+          <CustomButton color='default' action={() => { }}>
             Post Comment
           </CustomButton>
         </form>

@@ -65,12 +65,10 @@ p{
 
 /* Textinput */
 .input-brand{
-/* width: 308px; */
 height: 56px;
 border-radius: 20px;
 border: 1px solid #c9c4c4cc;
 padding-inline: 32px;
-padding-block: 23px;
 color: #555555;
 }
 
@@ -80,7 +78,7 @@ outline: none;
 
 /* brand-btn */
   .btn-brand {
-    @apply px-3 py-[7px] sm:px-6 sm:py-[10px] text-lg md:text-base rounded-2xl cursor-pointer font-medium disabled:cursor-not-allowed;
+    @apply px-8 py-[18px] sm:px-6 sm:py-[10px] text-lg font-semibold rounded-2xl cursor-pointer disabled:cursor-not-allowed;
   }
 
 
