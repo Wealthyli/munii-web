@@ -323,7 +323,7 @@ export const teamMembers = [
   },
   {
     name: 'Leke White',
-    title: 'COO',
+    title: 'CDO',
     image: '/images/doe.png',
   },
   // {
