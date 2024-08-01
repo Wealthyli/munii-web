@@ -8,7 +8,7 @@ const page = () => {
         <Header />
         <div className='w-screen h-[2px] bg-border/gray'></div>
       </div>
-      <div className='mx-auto max-w-3xl px-4 py-16 flex flex-col gap-4 z-10 md:mt-[7rem] mt-[5rem] text-justify'>
+      <div className='mx-auto max-w-3xl px-4 py-16 flex flex-col gap-4 z-10 md:mt-[7rem] mt-[5rem] '>
         <h1 className='font-bold'>AGREEMENT TO OUR LEGAL TERMS </h1>
         <p>
           We are <b> MUNII</b>, a company registered in Nigeria at <b>ADDRESS, LAGOS.</b>
@@ -462,9 +462,28 @@ const page = () => {
           <h1 className='font-bold mb-2'>
             20. DISPUTE RESOLUTION
           </h1>
-          <p>
-            We may include software for use in connection with our Services. If such software is  accompanied by an end user licence agreement ('EULA'), the terms of the EULA will  govern your use of the software. If such software is not accompanied by a EULA, then  we grant to you a non-exclusive, revocable, personal, and non-transferable licence to  use such software solely in connection with our services and in accordance with these  Legal Terms. Any software and any related documentation is provided 'AS IS' without  warranty of any kind, either express or implied, including, without limitation, the  implied warranties of merchantability, fitness for a particular purpose, or non infringement. You accept any and all risk arising out of use or performance of any  software. You may not reproduce or redistribute any software except in accordance  with the EULA or these Legal Terms.
-          </p>
+          <div className='flex flex-col gap-2'>
+            <h2 className='font-bold'>Binding Arbitration
+            </h2>
+            <p>
+              Any dispute arising out of or in connection with these Legal Terms, including any  question regarding its existence, validity, or termination, shall be referred to and finally  resolved by the. The seat, or legal place, or arbitration shall be LAGOS, Nigeria. The  language of the proceedings shall be English. The governing law of these Legal Terms  shall be substantive law of Nigeria.
+            </p>
+          </div>
+          <div className='flex flex-col gap-2'>
+            <h2 className='font-bold'>Restrictions
+            </h2>
+            <p>
+              The Parties agree that any arbitration shall be limited to the Dispute between the  Parties individually. To the full extent permitted by law, (a) no arbitration shall be joined  with any other proceeding; (b) there is no right or authority for any Dispute to be  arbitrated on a class-action basis or to utilise class action procedures; and (c) there is no  right or authority for any Dispute to be brought in a purported representative capacity  on behalf of the general public or any other persons
+            </p>
+          </div>
+          <div className='flex flex-col gap-2'>
+            <h2 className='font-bold'>Exceptions to Arbitration
+            </h2>
+            <p>
+              The Parties agree that the following Disputes are not subject to the above provisions  concerning binding arbitration: (a) any Disputes seeking to enforce or protect, or  concerning the validity of, any of the intellectual property rights of a Party; (b) any  Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy,  or unauthorised use; and (c) any claim for injunctive relief. If this provision is found to  be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling  within that portion of this provision found to be illegal or unenforceable and such  Dispute shall be decided by a court of competent jurisdiction within the courts listed for  jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that  court.
+            </p>
+          </div>
+
         </article>
         <article className='flex flex-col text-justify gap-2'>
           <h1 className='font-bold mb-2'>
@@ -548,6 +567,12 @@ const page = () => {
           <p>
             In order to resolve a complaint regarding the Services or to receive further information  regarding use of the Services, please contact us at:
           </p>
+          <ul>
+            <li>
+              <b>Address</b>: 1397 Hakeem Agboola Crescent, Amuwo Odofin, Lagos
+            </li>
+            <li><b>email</b>: support@munii.finance </li>
+          </ul>
         </article>
       </div>
     </div >

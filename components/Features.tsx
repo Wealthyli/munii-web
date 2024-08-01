@@ -24,19 +24,19 @@ function Features() {
 
   const features = [
     {
-      title: "All Your Accounts in One Place",
-      desc: "Streamline your finances by viewing all your bank accounts in one place.",
-      icon: <BiSolidBank className=" w-[40px] h-[40px] text-primary"/>,
+      title: "Different Accounts, One Location",
+      desc: "Monitor your finances by viewing all your bank accounts in one place.",
+      icon: <BiSolidBank className=" w-[40px] h-[40px] text-primary" />,
     },
     {
       title: "Stay On Track With Smart Alerts",
       desc: "Receive timely alerts and reminders to avoid missed payments and keep your spending within budget.",
-      icon: <HiMiniBellAlert className=" w-[40px] h-[40px] text-primary"/>,
+      icon: <HiMiniBellAlert className=" w-[40px] h-[40px] text-primary" />,
     },
     {
-      title: "Automatic Transaction Categorization",
-      desc: "Effortlessly categorize your bank account transactions automatically for streamlined expense tracking and better financial management.",
-      icon: <RiListCheck2 className=" w-[40px] h-[40px] text-primary"/>,
+      title: "Organize Transactions Automatically",
+      desc: "Easily categorize transactions for expense tracking and improved financial management.",
+      icon: <RiListCheck2 className=" w-[40px] h-[40px] text-primary" />,
     },
   ];
   const Card = ({ title, text, icon }: CardProp) => {
@@ -132,7 +132,7 @@ function Features() {
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text "
             >
-              Control Your Spending{" "}
+              Take Control Of Your Spending{" "}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -140,8 +140,7 @@ function Features() {
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="text-s-text text-justify text-sm leading-[24px]"
             >
-              Allocate your funds effectively, set realistic financial goals,
-              and ensure every resource is working for you.
+              Allocate your funds properly, set realistic financial goals and ensure your money works for you.
             </motion.p>
           </div>
         </div>
@@ -196,7 +195,7 @@ function Features() {
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="font-semibold text-[28px] lg:text-[32px] leading-[43.36px] text-text "
             >
-              Empower Your Financial Journey
+              Meet Your Financial Goals
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -204,9 +203,7 @@ function Features() {
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="text-s-text text-justify text-sm leading-[24px]"
             >
-              Maximize your financial potential with our expert-managed
-              portfolios, automated savings plans, and extensive financial
-              education resources.
+              Get the best out of your finances with our expertly managed portfolios, automated savings plans, and extensive financial education resources.
             </motion.p>
           </div>
         </div>

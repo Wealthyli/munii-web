@@ -79,16 +79,6 @@ function Header() {
           </li>
         </ul>
         <div className="lg:flex items-center gap-[1.5rem] hidden ">
-          <button className="p-2 bg-white rounded-[50%]">
-            <Link href="https://www.instagram.com/munii_finance/?hl=en">
-              <AiOutlineTwitter className="text-black w-[30px] h-[30px]" />
-            </Link>
-          </button>
-          <button className="p-2 bg-white rounded-[50%]">
-            <Link href="https://x.com/MuniiFinance">
-              <AiFillInstagram className="text-black w-[30px] h-[30px]" />
-            </Link>
-          </button>
           <button
             onClick={openModal}
             className="border-2 border-primary text-primary py-[10px] px-[32px] rounded-[20px] font-[600] text-lg"
