@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import { bannerImage, googlePlay } from "@/public/images";
+import BannerImage from "@/public/images"
 import Image from "next/image";
 import { IoLogoApple } from "react-icons/io";
 import { motion } from "framer-motion";
@@ -24,13 +25,14 @@ function Hero() {
         initial={{ opacity: 0 }}
         whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
         transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="flex flex-col justify-center items-center lg:items-stretch w-full lg:max-w-[45%]"
+        className="flex flex-col justify-center items-center lg:items-stretch w-full lg:max-w-[47%]"
       >
         <h1 className="text-[36px] md:text-[48px] leading-[48px] md:leading-[72px] font-bold text-center lg:text-left">
-          Seamless Financial Management Made<span className="text-primary">{" "}Simple</span>
+          Financial Management Made
+          <span className="text-primary">{" "}Easy</span>
         </h1>
         <p className="text-[16px] md:text-[18px] mt-4 lg:max-w-[31rem] text-center lg:text-left">
-          Unify your accounts, monitor your spending, budget and invest with ease.
+          Manage your accounts, monitor your spending, budget and invest with ease.
         </p>
         <div className="lg:hidden lg:max-w-[60%] mt-10 ">
           <Image
@@ -38,6 +40,7 @@ function Hero() {
             alt="hero-image"
             className="w-full md:w-[486px] h-auto md:h-[507px]"
           />
+          {/* <BannerImage /> */}
         </div>
         <div className="mt-8 flex flex-col lg:flex-row gap-4 ">
           <button
@@ -52,12 +55,12 @@ function Hero() {
           </button>
           <button
             onClick={openModal}
-            className="flex flex-row bg-black p-4 items-center justify-evenly md:justify-center gap-3 w-full md:w-[330px] h-[100px] border rounded-[15px]"
+            className="flex flex-row bg-black p-4 items-center justify-evenly md:justify-center gap-1 w-full md:w-[330px] h-[100px] border rounded-[15px]"
           >
-            <IoLogoApple className="text-white w-[52px] h-[56px]" />
+            <IoLogoApple className="text-white w-[100px] h-[100px]" />
             <div className="flex flex-col text-white gap-[0.25rem] text-left">
-              <h1 className="capitalize text-lg">Get it On</h1>
-              <h3 className="font-semibold text-2xl">Apple Play</h3>
+              <h1 className="capitalize text-lg whitespace-nowrap">Download On the</h1>
+              <h3 className="font-semibold text-3xl">App Store</h3>
             </div>
           </button>
         </div>

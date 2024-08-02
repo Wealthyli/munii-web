@@ -6,21 +6,22 @@ import Image from "next/image";
 import { doe } from "@/public/images";
 import CTA from "./main/CTA";
 import { motion } from "framer-motion";
+import { FrequentAskQuestion } from "./about";
 
 function Testimonial() {
   const testimonials = [
     {
-      image: doe ,
+      image: doe,
       name: "Mike Evans",
       text: "Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits.",
     },
     {
-      image: doe ,
+      image: doe,
       name: "Patricia Holmes",
       text: "Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits.",
     },
     {
-      image: doe ,
+      image: doe,
       name: "Jack Smith",
       text: "Saving with munii has been an absolute game-changer for my Finance. Their strategic approach, creativity, and dedication have significantly impacted my financial habits.",
     },
@@ -53,8 +54,8 @@ function Testimonial() {
     );
   };
   return (
-    <div className="px-4 md:px-[5rem] bg-[#CAFF011A] w-full lg:h-[100vh] pt-8 lg:pt-20 ">
-      <div className="flex flex-col gap-4 items-center justify-center">
+    <div className=" ">
+      <div className="flex flex-col gap-4 items-center justify-center bg-[#CAFF011A] w-full py-8 ">
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={[{ y: [-40, 0] }, { opacity: 1 }]}
@@ -63,17 +64,20 @@ function Testimonial() {
         >
           What Our Customers Say About Us
         </motion.h1>
-        
+        <div className="flex flex-row flex-wrap justify-evenly gap-4">
+          {testimonials.map((item, key) => (
+            <Card
+              key={key}
+              image={item.image}
+              text={item.text}
+              name={item.name}
+            />
+          ))}
+        </div>
       </div>
-      <div className="flex flex-row flex-wrap justify-evenly">
-        {testimonials.map((item, key) => (
-          <Card 
-            key={key}
-            image={item.image}
-            text={item.text}
-            name={item.name}
-          />
-        ))}
+
+      <div>
+        <FrequentAskQuestion />
       </div>
       <CTA />
     </div>
